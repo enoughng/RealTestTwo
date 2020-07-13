@@ -223,6 +223,11 @@
         font-family : 'Noto Sans KR'
     }
 
+    #about-sns{
+        width : 150px;
+        float : right;
+
+    }
 
     .footer_copyright{
         padding-left : 250px;
