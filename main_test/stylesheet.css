@@ -145,8 +145,8 @@
         background: white;
         width: 450px;
         height: 400px;
-        border-width: 2px;
-        border-color: black;
+        border-width: 1px;
+        border-color: #EEEEEE;
         border-style: solid;
     }
     
