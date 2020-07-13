@@ -139,8 +139,8 @@
     }
 
     #recommend {
-        margin-top: 1px;
-        position: static;
+        margin-top: 30px;
+        position: absolute;
         overflow: hidden;
         background: white;
         width: 450px;
@@ -169,8 +169,11 @@
         display: none;
     }
     
-    .search-close {
+    #search-close {
         text-align: right;
+        position: absolute;
+        right:0px;
+        bottom:0px;
     }
                                       
 
