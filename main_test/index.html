@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap&subset=korean" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8027eaaf76.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -27,9 +29,25 @@
                 <a href="#"><img src="mainLogo.png" width="138px" height="38px" alt="mainLogo"></a>
                 <div class="search">
                     <div class="search_content">
-                        <input type="text" placeholder="상품명, 지역명, @상점명 입력" class="searching" value="">
+                        <div>
+                            <input type="text" placeholder="상품명, 지역명, @상점명 입력" class="searching" value="">
+                            <div id="recommend" class="invisible">
+                                <div class="item-box">
+                                    <div class="item">
+                                        <i class="fas fa-store">상점점색></i>
+                                        <span class="text"></span>
+                                        <span class="recommend-message">상점명으로 검색</span>
+                                    </div>
+                                </div>
+                                <div id="search-close">
+                                    <a href="javascript:void(0);">닫기</a>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <a href="#"><img src="search_icon.png" width="16" height="16" alt="검색 버튼 아이콘"></a>
                     </div>
+                   
                 </div>
                 <div class ="my-menu" width ="328" height ="26">
                     <a class = "my-menu-box" href="#"><img src ="sell.png" alt ="판매하기아이콘" height = "26"></a>
@@ -119,7 +137,7 @@
    
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <script src="recomment-searchbar.js"></script>
     
 </body>
 
