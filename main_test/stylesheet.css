@@ -169,6 +169,7 @@
         padding-right : 250px;
     }                                  
     .second_content_back{
+        margin-top : 50px;
         background-color: rgb(249, 249, 249);
         padding-left : 250px;
         padding-right: 250px;
@@ -176,7 +177,7 @@
                                       
     
     .second_content{
-        background-color: black;
+        background-color: lavender;
         height : 3000px;
                                       
     }
@@ -453,3 +454,12 @@ a {
     background: #fff !important;
     opacity: 0;
 }
+
+
+/* main contents */
+.main-recommand--products{
+    width: 939px;
+    height: 350px;
+    background-color: lawngreen;
+}
+
