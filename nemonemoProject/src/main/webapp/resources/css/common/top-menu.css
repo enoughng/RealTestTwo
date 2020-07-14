@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/********** nav 시작 **********/
+nav {
+	display:flex;
+	border-bottom: 1px solid rgb(238, 238, 238);
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.top-nav {
+	width:1024px;
+	margin: 0 auto;
+}
+
+
+#fav-icon {
+	width: 1rem;
+	height: 1rem;
+}
+
+#logout {
+	border-style: none;
+	text-decoration:none;
+	border: 0px;
+	height: 2rem;
+}
+
+#top-menu-list {
+	width:40%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:flex-end;
+}
+
+
+#top-menu-list > * {
+	margin-right:5%;
+}
+
+
+
+.top_nav_combo::after {
+	content: "";
+	background-image:
+		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAAXNSR0IArs4c6QAAAGxJREFUKBWt0s0NgDAIBWDbztS747CFdQvGcQBmAoOJiT+0ovUl3B7f6QUAKMw8DT8kxjgnIlpyzkFExh5TMUQsSZFedMfU2sAe9IidwC/oFbuBb1ALM0EPWsOqYAttYU3QQp8w/XFFx6/nKa8iD1fC7ZiLwQAAAABJRU5ErkJggg==);
+	background-size: 10px 5px;
+	position: absolute;
+	top: 20px;
+	width: 10px;
+	height: 5px;
+	margin-left: 4px;
+	cursor: default;
+}
