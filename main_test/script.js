@@ -19,7 +19,17 @@ $(function() {
 
         $("body").toggleClass("overflow-hidden");
     });
-  
+
+    //뭐야
+    // $("#menu-wrapper").on('click mouseleave', function(event) {
+    //     event.stopPropagation();
+    //     $("#hamburger-menu").toggleClass("hidden");
+    //     $("#menu-container .menu-list").toggleClass("hidden");
+    //     slideMenu();
+
+    //     $("body").toggleClass("overflow-hidden");
+    // });
+
 
     $(".menu-list").find(".accordion-toggle").on('click mouseenter',function() {
         $(this).next().toggleClass("open").slideToggle("fast");
