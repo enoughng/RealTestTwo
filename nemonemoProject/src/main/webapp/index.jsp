@@ -9,6 +9,10 @@
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/include/top-menu.jsp"/>
+	<section id="content">
+		
+	</section>
 	<jsp:include page="/WEB-INF/views/include/header.jsp" />
+	<jsp:include page="/WEB-INF/views/include/footer.jsp"/>
 </body>
 </html>

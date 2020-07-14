@@ -3,8 +3,8 @@
 <header class="sticky-top">
 	<div class="main_header container-md">
 		<div class="flex">
-			<a href="#"><img src="mainLogo.png" width="138px" height="38px"
-				alt="mainLogo"></a>
+			<a href="#"><img src="/resources/images/header/mainLogo.png"
+				width="138px" height="38px" alt="mainLogo"></a>
 			<div class="search">
 				<div class="search_content">
 					<div>
@@ -50,16 +50,18 @@
 							</div>
 						</div>
 					</div>
-					<a href="#"><img src="search_icon.png" width="16" height="16"
-						alt="검색 버튼 아이콘"></a>
+					<!-- 검색 버튼 아이콘 -->
+					<a href="#"><img src="/resources/images/header/search_icon.png"
+						width="16" height="16" alt="검색 버튼 아이콘"></a>
 				</div>
 			</div>
-
+			<!-- 우측메뉴 -->
 			<div class="my-menu" width="328" height="26">
-				<a class="my-menu-box" href="#"><img src="sell2.png"
-					alt="판매하기아이콘" height="26">&nbsp;&nbsp;판매하기</a> <a href="#"><img
-					src="my_store.png" alt="내상점아이콘" height="24" width="23">&nbsp;&nbsp;내
-					상점</a>
+				<a class="my-menu-box" href="#"><img
+					src="/resources/images/header/sell2.png" alt="판매하기아이콘" height="26">&nbsp;&nbsp;판매하기</a>
+				<a href="#"> <img src="/resources/images/header/my_store.png"
+					alt="내상점아이콘" height="24" width="23">&nbsp;&nbsp;내 상점
+				</a>
 			</div>
 		</div>
 		<div class="categories">
@@ -80,8 +82,8 @@
 						<li><a class="head" href="#">운동화/캐주얼화</a></li>
 						<li><a class="head" href="#">주얼리/액세서리</a></li>
 					</ul>
-					<li id="nav2" class="toggle accordion-toggle"><span
-						class="icon-plus"></span> <a class="menu-link" href="#">여성의류</a></li>
+					<li id="nav2" class="toggle accordion-toggle">
+					<span class="icon-plus"></span> <a class="menu-link" href="#">여성의류</a></li>
 					<ul class="menu-submenu accordion-content">
 						<li><a class="head" href="#">Submenu1</a></li>
 						<li><a class="head" href="#">Submenu2</a></li>
