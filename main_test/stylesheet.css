@@ -1,22 +1,50 @@
-                                        /********** header 시작 **********/
+                                        /********** nav 시작 **********/
+
+
+
 
 .top-nav{
     background-color: white;
     border-bottom: 1px solid rgb(238, 238, 238);
     height:39px;
+    display: flex;
     padding-left:250px;
     padding-right:250px;
-}
-.fav_icon{
-    float : left;
-    margin-right : 2px;
+    justify-content: space-between;
 }
 
 
+#logout{
+    border-style: none;
+    outline: none;
+    border : 0px;
+    height : 39px;
+    padding-bottom : 20px;
+    padding-right : 15px;
+}
+
+  .top_nav_combo{
+        padding-right : 25px;
+    }
+    
+    .top_nav_combo::after {
+        content: "";
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAAAXNSR0IArs4c6QAAAGxJREFUKBWt0s0NgDAIBWDbztS747CFdQvGcQBmAoOJiT+0ovUl3B7f6QUAKMw8DT8kxjgnIlpyzkFExh5TMUQsSZFedMfU2sAe9IidwC/oFbuBb1ALM0EPWsOqYAttYU3QQp8w/XFFx6/nKa8iD1fC7ZiLwQAAAABJRU5ErkJggg==);
+        background-size: 10px 5px;
+        position: absolute;
+        top: 20px;
+        width: 10px;
+        height: 5px;
+        margin-left:4px;
+        cursor: default;
+    } 
+
+                                        /********** header 시작 **********/
+    header{
+        background-color:white;
+    }
     .main_header{
         padding-top : 35px;
-        padding-left : 250px;
-        padding-right : 250px;
         background-color: white;
         border-bottom: 1px solid rgb(238, 238, 238);
         position : sticky;   
@@ -45,6 +73,9 @@
         align-items: center;
         padding: 0px 15px;
     }
+
+  
+
     /* 검색 필드 */
     .searching{
         direction: ltr;
@@ -65,6 +96,7 @@
         height: 40px;
         padding-bottom : 0px;
         margin-bottom : 0px;
+        justify-content: center;
     }
 
     .main_menu{
@@ -104,7 +136,15 @@
     }
                                          /********** main **********/
 
-    
+     button {
+        font-size : 13px;
+        font-family : "Noto Sans KR", "sans-serif";
+        color : rgb(77, 77, 77);  
+         background-color: transparent;
+     }
+
+
+
     a {
         cursor: pointer;
         text-decoration: none;
