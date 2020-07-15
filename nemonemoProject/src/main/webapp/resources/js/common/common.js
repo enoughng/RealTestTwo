@@ -1,52 +1,57 @@
 
 /* HEADER 로그아웃 팝업 */
-function open_pop(e) {
+function open_pop() {
     $('#myModal').show();
 };
 // Header 로그아웃  팝업 Close 기능
-function close_pop(flag) {
+function close_pop() {
     $('#myModal').hide();
 };
 
-
-/* 사이드배너*/
-
-var stmnLEFT = 10; // 오른쪽 여백 
-var stmnGAP1 = 0; // 위쪽 여백 
-var stmnGAP2 = 150; // 스크롤시 브라우저 위쪽과 떨어지는 거리 
-var stmnBASE = 150; // 스크롤 시작위치 
-var stmnActivateSpeed = 25; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
-var stmnScrollSpeed = 15; //스크롤 속도 (클수록 느림)
-var stmnTimer;
-
-function RefreshStaticMenu() {
-    var stmnStartPoint, stmnEndPoint;
-    stmnStartPoint = parseInt(document.getElementById('STATICMENU').style.top, 10);
-    stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2;
-    if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
-    if (stmnStartPoint != stmnEndPoint) {
-        stmnScrollAmount = Math.ceil(Math.abs(stmnEndPoint - stmnStartPoint) / 15);
-        document.getElementById('STATICMENU').style.top = parseInt(document.getElementById('STATICMENU').style.top, 10) + ((stmnEndPoint < stmnStartPoint) ? -stmnScrollAmount : stmnScrollAmount) + 'px';
-        stmnRefreshTimer = stmnScrollSpeed;
-    }
-    stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
-}
-$(function InitializeStaticMenu() {
-    document.getElementById('STATICMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치. left로 바꿔도.
-    document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE + 'px';
-    RefreshStaticMenu();
+$(function() {
+	$('#logout').on('click', open_pop);
+	$('#model-cancel').on('click', close_pop);
 });
+
+
+/* 사이드배너 성일*/
+
+// var stmnLEFT = 10; // 오른쪽 여백 
+// var stmnGAP1 = 0; // 위쪽 여백 
+// var stmnGAP2 = 150; // 스크롤시 브라우저 위쪽과 떨어지는 거리 
+// var stmnBASE = 150; // 스크롤 시작위치 
+// var stmnActivateSpeed = 25; //스크롤을 인식하는 딜레이 (숫자가 클수록 느리게 인식)
+// var stmnScrollSpeed = 15; //스크롤 속도 (클수록 느림)
+// var stmnTimer;
+
+// function RefreshStaticMenu() {
+//     var stmnStartPoint, stmnEndPoint;
+//     stmnStartPoint = parseInt(document.getElementById('STATICMENU').style.top, 10);
+//     stmnEndPoint = Math.max(document.documentElement.scrollTop, document.body.scrollTop) + stmnGAP2;
+//     if (stmnEndPoint < stmnGAP1) stmnEndPoint = stmnGAP1;
+//     if (stmnStartPoint != stmnEndPoint) {
+//         stmnScrollAmount = Math.ceil(Math.abs(stmnEndPoint - stmnStartPoint) / 15);
+//         document.getElementById('STATICMENU').style.top = parseInt(document.getElementById('STATICMENU').style.top, 10) + ((stmnEndPoint < stmnStartPoint) ? -stmnScrollAmount : stmnScrollAmount) + 'px';
+//         stmnRefreshTimer = stmnScrollSpeed;
+//     }
+//     stmnTimer = setTimeout("RefreshStaticMenu();", stmnActivateSpeed);
+// }
+// function InitializeStaticMenu() {
+//     document.getElementById('STATICMENU').style.right = stmnLEFT + 'px';  //처음에 오른쪽에 위치. left로 바꿔도.
+//     document.getElementById('STATICMENU').style.top = document.body.scrollTop + stmnBASE + 'px';
+//     RefreshStaticMenu();
+// }
 /* 사이드배너 종료*/
 
 
 
 
-/* main slide banner */
+/* 광고 배너 시작 */
 $(function () {
     $('.banner').slick({
         autoplay: true,
         arrows: true,
-        autoplaySpeed: 3000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
+        autoplaySpeed: 3000, // 이미지가 다른 이미지로 넘어 갈때의 텀
         // dots: true, 		// 스크롤바 아래 점으로 페이지네이션 여부
         autoplay: true,			// 자동 스크롤 사용 여부
         autoplaySpeed: 10000, 		// 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
@@ -57,7 +62,16 @@ $(function () {
         draggable: true, 	//드래그 가능 여부 
     });
 
-    /* categories hamburger menu */
+    var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+
+/* 광고 배너 끝 */
+
+/* 카테고리 아코디언 시작 */
     function slideMenu() {
         var activeState = $("#menu-container .menu-list").hasClass("active");
         $("#menu-container .menu-list").animate({ left: activeState ? "0%" : "-100%" }, 400);
@@ -72,8 +86,6 @@ $(function () {
     });
 
 
-
-
     $(".menu-list").find(".accordion-toggle").on('click mouseenter', function () {
         $(this).next().toggleClass("open").slideToggle("fast");
         $(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
@@ -83,10 +95,7 @@ $(function () {
     });
 
 });
-
-
-
-
+/* 카테고리 아코디언 끝 */
 
 /* side banner top click*/
 $(window).scroll(function () {

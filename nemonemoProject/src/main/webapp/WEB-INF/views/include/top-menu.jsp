@@ -5,7 +5,7 @@
 	<div class="top-nav">
 		<div class="nav justify-content-between">
 			<a class="nav-item"><img class="fav_icon" src="/resources/images/top-menu/fav.png"
-				alt="즐겨찾기아이콘" id="fav-icon">&nbsp;&nbsp;즐겨찾기</a>
+				alt="즐겨찾기아이콘" id="fav-icon">즐겨찾기</a>
 		
 		<ul id="top-menu-list" class="nav-item m-0 p-0">
 			<li class=""><a href="#" id="logout" class="">로그아웃</a></li>
