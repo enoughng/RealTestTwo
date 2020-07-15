@@ -1,16 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 
-<!-- side banner -->
-<div id="STATICMENU"
-	style="border-radius: 5px; border: 1px solid honeydew">
+
+<div id="static-menu">
 	<ul class="my_comment_ul">
-		<li><strong>&nbsp;&nbsp;&nbsp;&nbsp;ÃÖ±Ù º» »óÇ°</strong></li>
-		<li><img src="/resources/images/side-nav/nike.jpeg" alt="nike" width="100" height="100"></li>
-
+		<li><strong>ìµœê·¼ ë³¸ ìƒí’ˆ</strong></li> 
+		<li><img src="/resources/images/side-nav/nike.jpeg" alt="nike" id="nike"></li>
 		<li><img src="/resources/images/side-nav/nike2.jpeg" alt="nike2" width="100" height="100"></li>
-
-		<li><a href="#" class="a.top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;À§·Î°¡±â
-				¹öÆ°</a></li>
+		<li><a href="#" class="a.top">ìœ„ë¡œê°€ê¸° ë²„íŠ¼</a></li>
 	</ul>
 </div>

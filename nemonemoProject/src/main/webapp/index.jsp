@@ -22,7 +22,7 @@
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/include/top-menu.jsp"/>
-	<jsp:include page="/WEB-INF/views/include/header.jsp" />
+	<jsp:include page="/WEB-INF/views/include/header.jsp" />	
 	<section id="content">
 		
 	</section>
