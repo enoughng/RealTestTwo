@@ -13,11 +13,9 @@
 <script src="${pageContext.request.contextPath}/resources/vendor/fontawsome/js/all.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- <script src="/resources/vendor/bootstrap/js/bootstrap.min.js"></script> -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- 해당 페이지 JS파일 -->
 <script src="${pageContext.request.contextPath}/resources/js/common/common.js"></script>
-
 
 </head>
 <body>

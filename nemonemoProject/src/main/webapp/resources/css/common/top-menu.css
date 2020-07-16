@@ -5,13 +5,20 @@ nav {
 	display:flex;
 	border-bottom: 1px solid rgb(238, 238, 238);
 	background-color: white;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 }
+
+
+#top-menu-nav {
+	height:40px;
+}
+
 
 .top-nav {
 	width:1024px;
 	margin: 0 auto;
+	justify-content:center;
 }
 
 

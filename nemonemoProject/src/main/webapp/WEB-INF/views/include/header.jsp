@@ -14,45 +14,26 @@
 					value="">
 
 				<!-- 검색 내용 -->
-				<div id="recommend-box" class="invisible">
+				<div id="searched-box" class="invisible search-box">
 					<div class="item" style="border-bottom: 1px solid #EEEEEE">
 						<i class="fas fa-store">상점점색></i>
 						<!-- 검색 데이터가 담길곳 -->
-						<span id="search-text"></span> <span class="recommend-message">상점명으로
-							검색</span>
+						<span id="searched-box-content"></span> <span
+							class="recommend-message" id="searched-box-store">상점명으로 검색</span>
 					</div>
-					<div id="search-close">
-						<a href="#">닫기</a>
+					<div id="search-close-div">
+						<a href="#" class="search-close">닫기</a>
 					</div>
 				</div>
 
 				<!-- 인기검색어 및 최근 검색어 탭 -->
-				<div id="searched-box" class="invisible">
-					<ul class="nav nav-tabs " id="no-search-recommend">
-						<li class="nav-item w-50 text-center"><a
-							class="nav-link active" data-toggle="tab" href="#recent-search">최근검색어</a></li>
-						<li class="nav-item w-50 text-center"><a class="nav-link"
-							data-toggle="tab" href="#popular-search">인기검색어</a></li>
+				<div id="recommend-box" class="invisible search-box">
+					<ul class="nav nav-pills">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Menu 1</a></li>
+						<li><a href="#">Menu 2</a></li>
+						<li><a href="#">Menu 3</a></li>
 					</ul>
-					<div class="tab-content">
-						<!-- 인기검색어 -->
-						<div class="tab-pane fade show active" id="recent-search">
-							<p>최근검색어 1</p>
-							<p>최근검색어 2</p>
-							<p>최근검색어 3</p>
-							<p>최근검색어 4</p>
-						</div>
-						<!-- 최근검색어 -->
-						<div class="tab-pane fade" id="popular-search">
-							<p>1. 인기검색어 4</p>
-							<p>2. 인기검색어 4</p>
-							<p>3. 인기검색어 4</p>
-							<p>4. 인기검색어 4</p>
-						</div>
-					</div>
-					<div id="search-close">
-						<a href="#">닫기</a>
-					</div>
 					<!-- 검색 버튼 아이콘 -->
 				</div>
 				<a href="#"><img src="/resources/images/header/search_icon.png"
