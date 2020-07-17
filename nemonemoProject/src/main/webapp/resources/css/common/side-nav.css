@@ -1,11 +1,15 @@
    /* 사이드배너 */
   
   /* sb -> 사이드배너, rec_prd -> 최근_상품 */
+  /* 사이드배너 */
+  
+  /* sb -> 사이드배너, rec_prd -> 최근_상품 */
 
   .sidebanner-layout{
     position: absolute;
     top: 102px;
     right: calc(50% - 617px);
+    z-index: 20;
   }
   .sb-size {
       width : 90px;
@@ -108,10 +112,13 @@
     .rec-prd-img > img {
         width: 100%;
     }
-/*
-    .pro_info{
-    display: none;
+
+     /* 사이드 네비게이션 상품 정보 보기 */
+
+    .prd-info{
+    visibility: hidden;
     position: absolute;
+    z-index : 3000;
     top: -1px;
     left: -150px;
     width: 150px;
@@ -124,31 +131,29 @@
     }
 
 
-    .delete_rec{
+    .delete-rec{
     position: absolute;
     top: -1px;
     left: -18px;
     width: 17px;
     height: 17px;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     background: rgb(34, 34, 34);
     }
 
-    .rec_prd_title{
+    .rec-prd-title{
         margin-bottom: 10px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;  
     }
 
-    .rec_prd_price{
+    .rec-prd-price{
         font-weight: 600;
     }
-    */
+
 
     /* 페이징 처리 */
     .rec-prd-paging{
@@ -162,9 +167,7 @@
     width: 15px;
     height: 15px;
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: center;
     justify-content: center;
     border-width: 1px;
     border-style: solid;
@@ -208,7 +211,10 @@
     font-weight: 600;
     font-size: 13px;
     color: rgb(102, 102, 102);
+    
     }
+
    
 
+  /* 사이드배너 끝 */
   /* 사이드배너 끝 */

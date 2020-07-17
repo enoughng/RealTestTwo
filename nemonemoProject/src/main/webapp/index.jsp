@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 <!-- 공통 CSS -->
 <link rel="stylesheet" href="/resources/css/common/common.css">
+<!-- 페이지 CSS  -->
+
+
 
 <!-- 라이브러리 -->
 <script src="${pageContext.request.contextPath}/resources/vendor/jquery/jquery-3.5.1.min.js"></script>
@@ -17,6 +20,8 @@
 <!-- 해당 페이지 JS파일 -->
 <script src="${pageContext.request.contextPath}/resources/js/common/common.js"></script>
 
+
+
 </head>
 <body>
 	<jsp:include page="/WEB-INF/views/include/top-menu.jsp"/>
@@ -24,9 +29,7 @@
 		<jsp:include page="/WEB-INF/views/include/header.jsp" />
 		<jsp:include page="/WEB-INF/views/include/side-nav.jsp"/>		
 	</header>
-	<section id="content">
-		
-		<div style="height:10000px"></div>
+	<section>
 		
 	</section>
 	<jsp:include page="/WEB-INF/views/include/footer.jsp"/>

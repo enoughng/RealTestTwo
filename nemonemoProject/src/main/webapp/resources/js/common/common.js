@@ -13,6 +13,57 @@ $(function() {
 	$('#model-cancel').on('click', close_pop);
 });
 
+/* 
+	TOP-NAV
+*/
+
+
+$(function() {
+    /* top-nav 알림창 보여줌 */ 
+    $('#alert').mouseenter(function() {
+       $(".alert-content-box").css("visibility", "visible");
+
+    });
+
+    $('.alert-content-box').mouseleave(function() {
+        $(".alert-content-box").css("visibility", "hidden");
+       
+     });
+
+
+     /* top-nav 내상점 메뉴링크 보여줌 */
+     $('.mystore').mouseenter(function() {
+        $(".mystore-box").css("visibility", "visible");
+        
+     });
+     $('.mystore-box').mouseleave(function() {
+         $(".mystore-box").css("visibility", "hidden");
+      });
+
+    /* top-nav 고객센터 메뉴링크 보여줌 */
+     $('.cs').mouseenter(function() {
+        $(".cs-box").css("visibility", "visible");
+     });
+     $('.cs-box').mouseleave(function() {
+         $(".cs-box").css("visibility", "hidden");
+      });
+
+      /*사이드 네비게이션 상품 자세히보기*/
+      $('.rec-prd-img').mouseenter(function() {
+        $(".prd-info").css("visibility", "visible");
+     });
+     $('.rec-prd-img-group').mouseleave(function() {
+         $(".prd-info").css("visibility", "hidden");
+      });
+
+      /* TOP 버튼 누를 시 페이지 상위로 이동 */
+      $(".text-top").on("click", function(){  
+        $(location).attr('href','#');
+
+    }); 
+
+
+});
 
 /* 광고 배너 시작 */
 $(function() {
@@ -63,6 +114,7 @@ $(function() {
 	});
 
 });
+
 /* 카테고리 아코디언 끝 */
 
 /* side banner top click*/
@@ -102,105 +154,14 @@ $(function() {
 	});
 
 	
-})
-
-
-
-
+});
 
 function closeSearch() {
 	const rec = document.querySelector("#recommend");
 	rec.classList.add("invisible");
 }
-
-/* main recommand */
-//  $('.responsive').slick({
-//     dots: true,
-//     infinite: false,
-//     speed: 300,
-//     slidesToShow: 4,
-//     slidesToScroll: 4,
-//     responsive: [
-//       {
-//         breakpoint: 1024,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//           infinite: true,
-//           dots: true
-//         }
-//       },
-//       {
-//         breakpoint: 600,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 2
-//         }
-//       },
-//       {
-//         breakpoint: 480,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1
-//         }
-//       }
-//       // You can unslick at a given breakpoint now by adding:
-//       // settings: "unslick"
-//       // instead of a settings object
-//     ]
-//   });
-
 $(".items").not('.slick-initialized').slick({
-	// dots: true,
-	// infinite: false,
-	// speed: 300,
-	// slidesToShow: 4,
-	// slidesToScroll: 4,
-	// responsive: [
-	//   {
-	//     breakpoint: 1024,
-	//     settings: {
-	//       slidesToShow: 3,
-	//       slidesToScroll: 3,
-	//       infinite: true,
-	//       dots: true
-	//     }
-	//   },
-	//   {
-	//     breakpoint: 600,
-	//     settings: {
-	//       slidesToShow: 2,
-	//       slidesToScroll: 2
-	//     }
-	//   },
-	//   {
-	//     breakpoint: 480,
-	//     settings: {
-	//       slidesToShow: 1,
-	//       slidesToScroll: 1
-	//     }
-	//   }
-	// You can unslick at a given breakpoint now by adding:
-	// settings: "unslick"
-	// instead of a settings object
-	// ]
 	autoplay: true,
 	arrows: true,
 	autoplaySpeed: 3000 /* 이미지가 다른 이미지로 넘어 갈때의 텀 */,
 });
-
-// var swiper = new Swiper('.swiper-container', {
-//     slidesPerView: 3,
-//     spaceBetween: 30,
-//     slidesPerGroup: 3,
-//     loop: true,
-//     loopFillGroupWithBlank: true,
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
