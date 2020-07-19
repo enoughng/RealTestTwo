@@ -1,0 +1,17 @@
+.from-customer{
+    border : 1px;
+    border-color : black;
+
+}
+.reply{
+    background-color:#F44336;
+    border: none; 
+    color:white;
+    font-size : 20px; 
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+}
