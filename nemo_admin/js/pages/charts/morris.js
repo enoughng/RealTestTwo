@@ -1,20 +1,75 @@
 $(function () {
-    getMorris('line', 'line_chart');
-    getMorris('bar', 'bar_chart');
-    getMorris('area', 'area_chart');
-    getMorris('donut', 'donut_chart');
+    
+    Morris.Bar({
+        element: 'bar_chart',
+        data: [{
+            x: '2020-01-01',
+            y: 3,
+            z: 2,
+            a: 3
+        }, {
+                x: '2020-02-01',
+                y: 2,
+                z: null,
+                a: 1
+            }, {
+                x: '2020-03-01',
+                y: 0,
+                z: 2,
+                a: 4
+            }, {
+                x: '2020-04-01',
+                y: 2,
+                z: 4,
+                a: 3
+            }],
+        xkey: 'x',
+        ykeys: ['y', 'z', 'a'],
+        labels: ['Y', 'Z', 'A'],
+        barColors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(0, 150, 136)'],
+    });
+    $('#statics-image__btn').click(function() {
+        pdfPrint().then();
+    })
+
+    
+
 });
+
+
+function pdfPrint() {
+    html2canvas($('#bar_chart *')[0]).then(function(canvas) {
+        var w = document.getElementById("bar_chart").offsetWidth;
+        var h = document.getElementById("bar_chart").offsetHeight;
+        
+        var imgData = canvas.toDataURL('image/png', 1);
+        var doc= new jsPDF('L', 'pt', [w, h]);
+        doc.addImage(imgData, 'PNG', 10, 10, w, h);
+        doc.save('sample-file.pdf');
+    }).catch(function(e) {
+        console.log(e.message);
+    });
+}
+
+
+
+
+
+
+
 
 
 function getMorris(type, element) {
     if (type === 'line') {
         Morris.Line({
             element: element,
-            data: [{
+            data: [
+                {
                 'period': '2011 Q3',
                 'licensed': 3407,
                 'sorned': 660
-            }, {
+                }, 
+                {
                     'period': '2011 Q2',
                     'licensed': 3351,
                     'sorned': 629
