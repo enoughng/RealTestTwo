@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>네모내모</title>
+    <title>회원 정보 수정</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -31,7 +31,7 @@
 
     <!-- 공통 CSS -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="member_care_detail.css" rel="stylesheet">
+    <link href="member_edit.css" rel="stylesheet">
 
     <!--  테마 색상  -->
     <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
@@ -47,121 +47,13 @@
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">네모내모 Admin</a>
+                <a class="navbar-brand" href="../main.html">네모내모 Admin</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <!-- 알림 -->
                 <ul class="nav navbar-nav navbar-right">
 
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">notifications</i>
-                            <span class="label-count">7</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">NOTIFICATIONS</li>
-                            <li class="body">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">person_add</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>12 new members joined</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 14 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-cyan">
-                                                <i class="material-icons">add_shopping_cart</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>4 sales made</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 22 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-red">
-                                                <i class="material-icons">delete_forever</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy Doe</b> deleted account</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-orange">
-                                                <i class="material-icons">mode_edit</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy</b> changed name</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 2 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-blue-grey">
-                                                <i class="material-icons">comment</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> commented your post</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 4 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">cached</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> updated status</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-purple">
-                                                <i class="material-icons">settings</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>Settings updated</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> Yesterday
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="javascript:void(0);">View All Notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- #END# 알림s -->
+
             </div>
         </div>
     </nav>
@@ -211,16 +103,16 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="../members/member_CRUD.html">회원정보</a>
+                                <a href="member_CRUD.html">회원정보</a>
                             </li>
                             <li>
-                                <a href="../members/member_care.html">1:1문의</a>
+                                <a href="member_care.html">1:1문의</a>
                             </li>
                             <li>
-                                <a href="../members/member_coupon.html">회원쿠폰</a>
+                                <a href="member_coupon.html">회원쿠폰</a>
                             </li>
                             <li>
-                                <a href="../members/member_report.html">신고관리</a>
+                                <a href="member_report.html">신고관리</a>
                             </li>
                         </ul>
                     </li>
@@ -320,79 +212,157 @@
         <section class="content">
             <div class="container-fluid">
                 <div class="block-header">
-                    <h1>
-                        1:1 문의
-                    </h1>
+                    
                 </div>
                 <div class="card">
+                    <div class ="header">
+                        <h1>
+                            회원 상세보기
+                        </h1>
+                    </div>
                     <div class="row clearfix">
                         <div>
                             <div class="body">
                                 <form id="form_validation" method="POST">
                                     <div class="table-responsive">
                                         <table class="table">
-                                            <thead class="col-m-2">
+                                            <div class ="mem-info">
+                                            <thead> 기본정보 </thead>
+                                            <button type="button" class="btn bg-teal waves-effect pull-right" >수정하기</button>
+                                            </div>
+                                            <tbody>
                                                 <tr>
-                                                    <th>상점명
-                                                    <td>공룡이네</td>
+                                                    <th> 상점명
+                                                    <td class ="col-md-5"><input type="text" readonly></td>
+                                                    </th>
+                                                    <th>이름
+                                                    <td class ="col-md-4">길동이</td>
                                                     </th>
                                                 </tr>
                                                 <tr>
-                                                    <th>카테고리
-                                                    <td>서비스/불만족</td>
+                                                    <th>비밀번호 변경
+                                                    <td><input type="password" placeholder ="비밀번호">
+                                                        <input type="password" placeholder ="비밀번호 확인"></td>
+                                                    </th>
+                                                    <th>이메일
+                                                        <td><input type="text" id="mem-tel" readonly></td>
                                                     </th>
                                                 </tr>
                                                 <tr>
-                                                    <th>문의내용
-                                                    <td><textarea cols="80" rows="10" required id="qna-from-cus"
-                                                            readonly>
-                                                </textarea></td>
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <th>답변상태
+                                                    <th>총 주문금액
                                                     <td>
-                                                        <input type="radio" name="jb-radio" id="delay_reply"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label"
-                                                            for="delay_reply">답변대기</label>
-                                                        <input type="radio" name="jb-radio" id="done_reply"
-                                                            class="custom-control-input">
-                                                        <label class="custom-control-label"
-                                                            for="done_reply">답변완료</label>
+                                                        <label>200,000원 </label>
+                                                        <button type="button"
+                                                            class="btn bg-blue-grey waves-effect">상세보기</button></td>
+                                                    </th>
+                                                    <th>연락처
+                                                    <td><input type="text" id="mem-tel" readonly></td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>주소
+                                                    <td colspan="3" class = "addr-box">
+                                                        <div class ="upd-postcode">
+                                                        <button type="button"
+                                                            class="btn bg-blue-grey waves-effect find-postcode">우편번호</button>
+                                                            <input type="text"><br>
+                                                        </div>
+                                                        <div class = "upd-addr">
+                                                        <label for="addr_1"></label><input type="text" id="addr_1">
+                                                        <label for="addr_2"></label> <input type="text" id="addr_2">
+                                                    
+                                                        </div>
                                                     </td>
                                                     </th>
                                                 </tr>
                                                 <tr>
-                                                    <th>네모내모 답변
-                                                    <td>
-                                                        <textarea cols="80" rows="10" required></textarea></td>
+                                                    <th>등급
+                                                    <td class ="col-md-4">
+                                                        <div class="btn-group">
+                                                            <button id = "grd-selected" type="button"
+                                                                class="btn bg-blue-grey dropdown-toggle"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                                선택 <span class="caret"></span>
+                                                            </button>
+                                                           
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="javascript:void(0);">일반</a></li>
+                                                                <li><a href="javascript:void(0);">VIP</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    </th>
+                                                    <th>선택약관 동의여부
+                                                    <td colspan="3">
+                                                        <div>
+                                                            <input type="checkbox" name="" id="ch-loc-service"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="ch-loc-service">위치서비스기반</label>
+                                                            <input type="checkbox" name="" id="ch_privacy"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="ch_privacy">개인정보보호</label>
+                                                        </div>
                                                     </td>
                                                     </th>
                                                 </tr>
-                                                <tr>
-                                                    <th>파일첨부
-                                                    <td>
-                                                   
-                                                            <input type="file" class="custom-file-input" id="file-to-cus" lang="es">
-                                                            <label class="custom-file-label" for="customFileLang"></label>
-                                                          
-                                                    </td>
-                                                    </th>
-                                                </tr>
-                                            </thead>
+
+                                            </tbody>
+
                                         </table>
+                                        <table class="table">
+                                            <thead>블랙리스트 설정</thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>설정여부
+                                                    <td>
+                                                        <input type="radio" name="" id="y-blacklist"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="y-blacklist">설정함</label>
+
+                                                        <input type="radio" name="" id="n-blacklist"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="n-blacklist">설정안함</label>
+                                                    </td>
+                                                    </th>
+                                                    <th>차단방법
+                                                    <td>
+                                                        <input type="checkbox" name="" id="block-purchase"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="block-purchase">구매차단</label>
+
+                                                        <input type="checkbox" name="" id="block-login"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="block-login">로그인차단</label>
+                                                    </td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>참고사항
+                                                    <td class="memo_black" colspan="3"><textarea cols="80" rows="10"
+                                                            required>
+                                            </textarea></td>
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
                                         <div class="btn-layout">
-                                            <button class="btn-primary btn-lg waves-effect" type="submit">답변완료</button>
-                                            <button class="btn-danger btn-lg waves-effect">취소</button>
+                                            <button type="button" class="btn bg-teal btn-lg waves-effect">완 료</button>
                                         </div>
                                 </form>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
+
+            </div>
         </section>
         <!-------------------------------------------SECTION--------------------------------------------------->
 

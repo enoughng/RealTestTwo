@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>네모내모</title>
-
-
-    <link rel="stylesheet" src=" https://cdn.datatables.net/select/1.2.1/css/select.dataTables.min.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMBER_CRUD</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -17,10 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
         type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-
-    <!-- JQuery DataTable Css -->
-    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
-
 
     <!-- Bootstrap Core Css -->
     <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -34,27 +25,22 @@
     <!-- Morris Chart Css-->
     <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
 
-    <!-- Custom Css -->
+    <!-- JQuery DataTable Css -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.12/css/jquery.dataTables.css">
+
+    <!-- 공통 CSS -->
     <link href="../css/style.css" rel="stylesheet">
-    <!-- member_CRUD_style-->
-    <link href="member_CRUD_style.css" rel="stylesheet">
+    <link href="member_CRUD_style.css" rel ="stylesheet">
 
     <!--  테마 색상  -->
     <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
 </head>
-<script>
-    $(document).ready(function () {
-        var table = $('#userTable').dataTable({
-            //----중략----
-            select: {
-                style: 'multi'
-            }
-        });
-
-    });
-</script>
+<!--
+<link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+-->
 
 <body class="theme-red">
+
 
     <!-- Top Bar -->
     <nav class="navbar">
@@ -63,470 +49,349 @@
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">네모내모 Admin</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <!-- 알림 -->
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">notifications</i>
-                            <span class="label-count">7</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">NOTIFICATIONS</li>
-                            <li class="body">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">person_add</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>12 new members joined</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 14 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-cyan">
-                                                <i class="material-icons">add_shopping_cart</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>4 sales made</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 22 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-red">
-                                                <i class="material-icons">delete_forever</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy Doe</b> deleted account</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-orange">
-                                                <i class="material-icons">mode_edit</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy</b> changed name</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 2 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-blue-grey">
-                                                <i class="material-icons">comment</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> commented your post</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 4 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">cached</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> updated status</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-purple">
-                                                <i class="material-icons">settings</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>Settings updated</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> Yesterday
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="javascript:void(0);">View All Notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- #END# 알림s -->
+                <a class="navbar-brand" href="../main.html">네모내모 Admin</a>
             </div>
         </div>
     </nav>
     <!-- #Top Bar -->
-
-
-
-    <!-- Left Sidebar -->
-    <aside id="leftsidebar" class="sidebar">
-        <!-- 어드민 정보 -->
-        <div class="user-info">
-            <div>
-                <img src="../images/bungaeLogo.png" alt="User" />
-            </div>
-            <div class="info-container">
-                <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
-                <div class="btn-group user-helper-dropdown">
-                    <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="true">keyboard_arrow_down</i>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
-                        <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
-                        <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
-                    </ul>
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- 어드민 정보 -->
+            <div class="user-info">
+                <div>
+                    <img src="../images/bungaeLogo.png" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>+Add</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- #END# 어드민 정보 -->
+            <!-- #END# 어드민 정보 -->
 
 
-        <!-- Menu -->
-        <div class="menu">
-            <ul class="list">
-                <li class="header">MAIN NAVIGATION</li>
-                <li class="active">
-                    <a href="../main.html">
-                        <i class="material-icons">home</i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">widgets</i>
-                        <span>회원관리</span>
-                    </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="member_CRUD.html">회원정보</a>
-                        </li>
-                        <li>
-                            <a href="member_care.html">1:1문의</a>
-                        </li>
-                        <li>
-                            <a href="member_coupon.html">회원쿠폰</a>
-                        </li>
-                        <li>
-                            <a href="member_report.html">신고관리</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">assignment</i>
-                        <span>사이트 관리</span>
-                    </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="#">카테고리 관리</a>
-                        </li>
-                        <li>
-                            <a href="#">배너(광고) 관리</a>
-                        </li>
-                        <li>
-                            <a href="#">공지사항 관리</a>
-                        </li>
-                        <li>
-                            <a href="#">F&Q 관리</a>
-                        </li>
-                        <li>
-                            <a href="#">이용약관 관리</a>
-                        </li>
-                        <li>
-                            <a href="#">프로모션 관리</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">swap_calls</i>
-                        <span>상품 관리</span>
-                    </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="#">상품관리</a>
-                        </li>
-                    </ul>
-                </li>
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="../main.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>회원관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="member_CRUD.html">회원정보</a>
+                            </li>
+                            <li>
+                                <a href="member_care.html">1:1문의</a>
+                            </li>
+                            <li>
+                                <a href="member_coupon.html">회원쿠폰</a>
+                            </li>
+                            <li>
+                                <a href="member_report.html">신고관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">assignment</i>
+                            <span>사이트 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">카테고리 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">배너(광고) 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">F&Q 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">이용약관 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">프로모션 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">swap_calls</i>
+                            <span>상품 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">상품관리</a>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
-                        <i class="material-icons">trending_down</i>
-                        <span>통계</span>
-                    </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="javascript:void(0);" class="menu-toggle">
-                                <span>회원현황</span>
-                            </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="#">총 회원 / 신규회원</a>
-                                </li>
-                                <li>
-                                    <a href="#">성별 / 나이대</a>
-                                </li>
-                                <li>
-                                    <a href="#">찜</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" class="menu-toggle">
-                                <span>판매현황</span>
-                            </a>
-                            <ul class="ml-menu">
-                                <li>
-                                    <a href="#">총 매출</a>
-                                </li>
-                                <li>
-                                    <a href="#">카테고리별 매출</a>
-                                </li>
-                                <li>
-                                    <a href="#">지역별 매출</a>
-                                </li>
-                                <li>
-                                    <a href="#">가격대별</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_down</i>
+                            <span>통계</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>회원현황</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="#">총 회원 / 신규회원</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">성별 / 나이대</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">찜</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>판매현황</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="#">총 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">카테고리별 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">지역별 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">가격대별</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
 
-            </ul> <!-- 메인 메뉴 ul 끝-->
+                </ul> <!-- 메인 메뉴 ul 끝-->
 
-        </div>
-        <!-- #Menu -->
+            </div>
+            <!-- #Menu -->
 
-    </aside>
-    <!-- #END# Left Sidebar -->
+        </aside>
+        <!-- #END# Left Sidebar -->
 
-    <!-- 메인 -->
+
+        <!-------------------------------------------SECTION--------------------------------------------------->
+        
+<!-- 컨텐츠 -->
     <!-- 모달 시작-->
-    <div id="myModal" class="modal">
-
-        <!-- 모달 내용 -->
-        <div class="del-modal-content">
-            <div class="del-selected-member">
-                <h2>회원 삭제</h2>
-                <p>삭제시 해당 회원의 활동이 중지 됩니다. 계속하시겠습니까?</p>
-                <div class = "del-btn-group">
-                
-                    <button class="cancel-del" onClick="close_pop();">
-                        취소
-                    </button>
-                    <button class="confirm-del">
-                        확인
-                    </button>
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title text-center modal-col-red" id="smallModalLabel" >회원삭제</h3>
+                </div>
+                <div class="modal-body">
+                    <h1 class="text-center">주의!</h1>
+                    <h5 class="text-center">
+                        확인 버튼을 누르시면</h5> 
+                        <h5 class="text-center">해당 고객은 삭제가 됩니다.</h5>
+                            <h5 class="text-center">삭제 하시겠습니까?</h5>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button id ="del-confirm" type="button" class="btn btn-link waves-effect" data-dismiss="modal">삭제</button>
+                    <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">취소</button>
                 </div>
             </div>
         </div>
     </div>
     <!--모달 끝-->
 
-    <section class="content">
-        <div class="container-fluid">
-            <div class="block-header">
-                <h1>
-                    회원정보
-                </h1>
-            </div>
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card" >
-                        <div class="header">
-                            <div class="row">
-                                <div class="col-xs-6 col-md-4">
-                                    <label>회원검색 </label>
-                                    <div class="input-group">
-                                        
-                                        <input type="text" class="form-control" placeholder="Search" id="txtSearch" />
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-primary" type="submit">
-                                                <span class="glyphicon glyphicon-search"></span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+        <section class="content">
+            <div class="container-fluid">
+                
+
+                <!-- mem-list -->
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class ="header">
+                                <h1>
+                                    회원정보
+                                </h1>
                             </div>
-                        </div>    
-                        <div class="body">
-                            <div class="table-responsive">
-                                <table id="member-table" width="100%"
-                                    class="table table-bordered table-hover text-center">
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>상점명</th>
-                                            <th>이메일</th>
-                                            <th>등급</th>
-                                            <th>핸드폰</th>
-                                            <th>가입일</th>
-                                            <th>블랙리스트</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table id ="mem-list" class="table table-bordered table-striped table-hover dataTable display">
+                                        <h4>네모내모 회원 리스트</h4>
+                                        <thead>
+                                            <tr>
+                                                <th>번호</th>
+                                                <th>상점명</th>
+                                                <th>등급</th>
+                                                <th>연락처</th>
+                                                <th>가입일</th>
+                                                <th>블랙리스트</th>
+                                                <th>처리</th>
+                                            </tr>
+                                        </thead>
 
-                                        <tr>
-                                            <td>1</td>
-                                            <td>공룡이네</td>
-                                            <td>dino@gmail.com</td>
-                                            <td>VIP</td>
-                                            <td>010-9920-3948</td>
-                                            <td>2009/09/15</td>
-                                            <td>N</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>예린이네</td>
-                                            <td>yerin@gmail.com</td>
-                                            <td>일반</td>
-                                            <td>010-2234-3948</td>
-                                            <td>2010/09/15</td>
-                                            <td>N</td>
-                                        </tr>
-                                        <tr>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>상점1102호</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>상점1995호</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>공룡이네</td>
+                                                <td>일반</td>
+                                                <td>010-5498-8849</td>
+                                                <td>2019/07/09</td>
+                                                <td>N</td>
+                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">수정</button>
+                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                            </tr>
 
-                                            <td>3</td>
-                                            <td>상점1203호</td>
-                                            <td>1203@gmail.com</td>
-                                            <td>VIP</td>
-                                            <td>010-9920-2948</td>
-                                            <td>2020/07/12</td>
-                                            <td>N</td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>3</td>
-                                            <td>상점1203호</td>
-                                            <td>1203@gmail.com</td>
-                                            <td>VIP</td>
-                                            <td>010-9920-2948</td>
-                                            <td>2020/07/12</td>
-                                            <td>N</td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>3</td>
-                                            <td>상점1203호</td>
-                                            <td>1203@gmail.com</td>
-                                            <td>VIP</td>
-                                            <td>010-9920-2948</td>
-                                            <td>2020/07/12</td>
-                                            <td>N</td>
-                                        </tr>
-                                        <tr>
-
-                                            <td>3</td>
-                                            <td>상점1203호</td>
-                                            <td>1203@gmail.com</td>
-                                            <td>VIP</td>
-                                            <td>010-9920-2948</td>
-                                            <td>2020/07/12</td>
-                                            <td>N</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                        </tbody>                                       
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- #END# 1:!  -->
             </div>
-            <!-- #END# 테이블 -->
+        </section>
 
-            <div class="pagination-align">
-                <ul class="pagination">
-                    <!-- li태그의 클래스에 disabled를 넣으면 마우스를 위에 올렸을 때 클릭 금지 마크가 나오고 클릭도 되지 않는다.-->
-                    <!-- disabled의 의미는 앞의 페이지가 존재하지 않다는 뜻이다. -->
-                    <li class="disabled">
-                        <a href="#">
-                            <span>«</span>
-                        </a>
-                    </li>
-                    <!-- active는 현재 페이지 -->
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#">
-                            <span>»</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="btn-align">
-                <button class="select-member">자세히보기</button>
-                <button class="delete-member" onclick="open_pop()">삭제</button>
-            </div>
-        </div>
-    </section>
+        <!-------------------------------------------SECTION--------------------------------------------------->
 
 
 
-    <!-- Jquery Core Js -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+        <!-- Jquery Core Js -->
+        <script src="../plugins/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core Js -->
-    <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+        <!-- Bootstrap Core Js -->
+        <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
-    <!-- Select Plugin Js -->
-    <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <!-- Select Plugin Js -->
+        <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
-    <!-- Slimscroll Plugin Js -->
-    <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+        <!-- Slimscroll Plugin Js -->
+        <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-    <!-- Waves Effect Plugin Js -->
-    <script src="../plugins/node-waves/waves.js"></script>
+        <!-- Waves Effect Plugin Js -->
+        <script src="../plugins/node-waves/waves.js"></script>
 
-    <!-- Jquery DataTable Plugin Js -->
-    <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
-    <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+        <!-- Jquery DataTable Plugin Js-->
+        <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
+        <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css"></script>
 
 
-    <!-- Custom Js -->
-    <script src="../js/admin.js"></script>
-    <script src="../js/pages/tables/jquery-datatable.js"></script>
+        <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+        <!-- Custom Js -->
+        <script src="../js/admin.js"></script>
+        <script type="text/javascript" src="member_CRUD_script.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script>
 
-    <!-- Demo Js -->
-    <script src="../js/demo.js"></script>
-    <script type="text/javascript" src="member_CRUD_script.js"></script>
-
-
+        <!-- Demo Js -->
+        <script src="../js/demo.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,7 @@
+
+
+/* 한국어 처리 */
 $(function () {
-<<<<<<< HEAD
     const table = $('#mem-care-list').DataTable({
         responsive: true,
         // ajax: "category_example.json",
@@ -31,27 +33,12 @@ $(function () {
         },
     });
 
-=======
-    $('.js-basic-example').DataTable({
-        responsive: true
-    });
-
-    const data = {
-        result: 'success',
-        category: {
-            title: '패션잡화',
-            category: [{
-                title: '남성의류',
-            }]
-        }   
-    };
-
-    
-
-    $('#categoryModalRegistryBtn').on('click', function() {
-        table.row.add({
-                
-        });
-    });
->>>>>>> 8869bf8b14ee7446a0ad7f514bad0ef839419561
 });
+
+$(function () {
+    $('#mem-care-list tbody').on('click', '.to-reply', function(){
+        alert("클릭");
+        location.href="member_care_detail.html";
+    });
+});
+

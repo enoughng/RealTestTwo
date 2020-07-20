@@ -1,8 +1,20 @@
 $(function () {
-<<<<<<< HEAD
-    const table = $('#mem-care-list').DataTable({
+    const table = $('.category-table').DataTable({
+        dom:'<"right"l>rt<"bottom"<"category-table--center"p>><"category-table--center"f>',
         responsive: true,
         // ajax: "category_example.json",
+        data: [{
+            "카테고리 코드": "100",
+            "대분류": "패션잡화",
+            "중분류": "NULL",
+            "소분류": "NULL",
+        }],
+        columns: [
+            { data: "카테고리 코드", width:'20%' },
+            { data: "대분류", width:'80%/3' },
+            { data: "중분류", width:'80%/3' },
+            { data: "소분류", width:'80%/3' },
+          ],
         //   buttons: {              
         //     name: 'primary',
         //     buttons: [ 'copy', 'csv', 'excel', 'pdf'],
@@ -31,11 +43,6 @@ $(function () {
         },
     });
 
-=======
-    $('.js-basic-example').DataTable({
-        responsive: true
-    });
-
     const data = {
         result: 'success',
         category: {
@@ -53,5 +60,7 @@ $(function () {
                 
         });
     });
->>>>>>> 8869bf8b14ee7446a0ad7f514bad0ef839419561
+    
+
+
 });
