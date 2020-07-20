@@ -1,4 +1,5 @@
 $(function () {
+<<<<<<< HEAD
     const table = $('#mem-care-list').DataTable({
         responsive: true,
         // ajax: "category_example.json",
@@ -30,4 +31,18 @@ $(function () {
         },
     });
 
+=======
+    $('.js-basic-example').DataTable({
+        responsive: true
+    });
+
+    //Exportable table
+    $('.js-exportable').DataTable({
+        dom: 'Bfrtip',
+        responsive: true,
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+>>>>>>> 8869bf8b14ee7446a0ad7f514bad0ef839419561
 });
