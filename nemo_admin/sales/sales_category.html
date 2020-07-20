@@ -15,26 +15,33 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
 
     <!-- Morris Chart Css-->
-    <link href="plugins/morrisjs/morris.css" rel="stylesheet" />
-
-     <!-- JQuery DataTable Css -->
-     <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- 공통 CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 
     <!--  테마 색상  -->
-    <link href="common/stylesheets/theme-red.css" rel="stylesheet" />
-    
+    <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
+
+    <!-- My Css-->
+    <link href="sales_product.css" rel="stylesheet">
 </head>
 
 <body class="theme-red">
@@ -173,7 +180,7 @@
             <!-- 어드민 정보 -->
             <div class="user-info">
                 <div>
-                    <img src="images/bungaeLogo.png" alt="User" />
+                    <img src="#" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
@@ -318,9 +325,61 @@
         <!-------------------------------------------SECTION--------------------------------------------------->
         <section class="content">
             <div class="container-fluid">
-                <div class="card">
-                    
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h1>총 판매 현황</h1>
+                        </div>
+                        <div class="body">
+                            
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  m-p-0" id="container">
+                                <h4 class="col-lg-2 col-md-2 col-sm2 col-xs-2">기간검색</h4>
+                                <div class="m-b-0 col-lg-4 col-md-4 col-sm-6 col-xs-6 m-p-0">
+                                    <div class="input-group date" id="sales_product_prev">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control"
+                                                placeholder="날짜를 입력해주세요">
+                                        </div>
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-1 text-c m-p-0">
+                                    <span class="very-strong-word">-</span>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 m-p-0">
+                                    <div class="input-group date" id="sales_product_next">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control"
+                                                placeholder="날짜를 입력해주세요">
+                                        </div>
+                                        <span class="input-group-addon">
+                                            <i class="material-icons">date_range</i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-p-0">
+                                <h4 class="col-lg-2 col-md-2 col-sm2 col-xs-2">저장하기</h4>
+                                <button class="btn waves-effect bg-pink" id="statics-image__btn">이미지 파일</button>
+                                <button class="btn waves-effect bg-pink">CSV</button>
+                                <button class="btn waves-effect bg-pink">엑셀 파일</button>
+                             </div>
+                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-p-0">
+                                <h4 class="col-lg-2 col-md-2 col-sm2 col-xs-2">기간별로 보기</h4>
+                                <button class="btn waves-effect bg-pink" id="statics-image__btn">연간</button>
+                                <button class="btn waves-effect bg-pink">월간</button>
+                                <button class="btn waves-effect bg-pink">주간</button>
+                             </div>
+                             <div></div>
+                            <div class="clearfix"></div>
+                            <div id="bar_chart" class="graph"></div>
+                        </div>
+                    </div>
                 </div>
+                <!-- #END# Line Chart -->
             </div>
         </section>
         <!-------------------------------------------SECTION--------------------------------------------------->
@@ -329,33 +388,48 @@
 
 
         <!-- Jquery Core Js -->
-        <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="../plugins/jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core Js -->
-        <script src="plugins/bootstrap/js/bootstrap.js"></script>
+        <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
         <!-- Select Plugin Js -->
-        <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+        <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
         <!-- Slimscroll Plugin Js -->
-        <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+        <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
         <!-- Waves Effect Plugin Js -->
-        <script src="plugins/node-waves/waves.js"></script>
+        <script src="../plugins/node-waves/waves.js"></script>
 
         <!-- Jquery CountTo Plugin Js -->
-        <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+        <script src="../plugins/jquery-countto/jquery.countTo.js"></script>
 
         <!-- Morris Plugin Js -->
-        <script src="plugins/raphael/raphael.min.js"></script>
-        <script src="plugins/morrisjs/morris.js"></script>
+        <script src="../plugins/raphael/raphael.min.js"></script>
+        <script src="../plugins/morrisjs/morris.js"></script>
+
+        <!-- 이상한거 -->
+        <script src="jspdf.min.js"></script>
+        <script src="bluebird.min.js"></script>
+        <script src="html2canvas.min.js"></script>
+
+        <!-- Moment Plugin Js -->
+        <script src="../plugins/momentjs/moment.js"></script>
+
+        <!-- Bootstrap Material Datetime Picker Plugin Js -->
+        <script src="../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+        <!-- Bootstrap Datepicker Plugin Js -->
+        <script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
         <!-- Custom Js -->
-        <script src="js/admin.js"></script>
-        <script src="js/pages/index.js"></script>
+        <script src="../js/admin.js"></script>
+        <script src="../js/pages/charts/morris.js"></script>
+        <script src="sales_product_datepicker.js"></script>
 
         <!-- Demo Js -->
-        <script src="js/demo.js"></script>
+        <script src="../js/demo.js"></script>
 </body>
 
 </html>

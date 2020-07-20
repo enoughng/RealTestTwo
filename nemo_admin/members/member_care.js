@@ -36,7 +36,7 @@ $(function () {
 });
 
 $(function () {
-    $('#mem-care-list tbody').on('click', '.to-reply', function(){
+    $('#mem-care-list tbody').on('click', '.to_reply', function(){
         alert("클릭");
         location.href="member_care_detail.html";
     });
