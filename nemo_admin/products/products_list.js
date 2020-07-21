@@ -1,24 +1,24 @@
 
 
 
-const table = $('#mem-list');
+// const table = $('#mem-list');
 
-/* 회원 삭제 구현 */
-$(function () {
-    $('#mem-list tbody').on('click', '.mem-del-btn', function(){
-        const selected = this;
-        $('#smallModal').modal("toggle");
-        if($('#del-confirm').click(function(){
-            $(selected).closest('tr').remove();
-        }));
-    });
-});
+// /* 회원 삭제 구현 */
+// $(function () {
+//     $('#mem-list tbody').on('click', '.mem-del-btn', function(){
+//         const selected = this;
+//         $('#smallModal').modal("toggle");
+//         if($('#del-confirm').click(function(){
+//             $(selected).closest('tr').remove();
+//         }));
+//     });
+// });
 
-/* 회원 수정 페이지로 */
-$(function () {
-    $('#mem-list tbody').on('click', '.mem-upd-btn', function(){
-        location.href="member_edit.html";
-    });
+// /* 회원 수정 페이지로 */
+// $(function () {
+//     $('#mem-list tbody').on('click', '.mem-upd-btn', function(){
+//         location.href="member_edit.html";
+//     });
     
 table.dataTable({
         responsive: true,
@@ -46,5 +46,5 @@ table.dataTable({
         }
 
     });
-});
+
 

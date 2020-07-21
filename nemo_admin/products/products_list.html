@@ -30,7 +30,7 @@
 
     <!-- 공통 CSS -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="member_CRUD_style.css" rel ="stylesheet">
+    <link href="products_list.css" rel="stylesheet">
 
     <!--  테마 색상  -->
     <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
@@ -217,10 +217,10 @@
 
 
         <!-------------------------------------------SECTION--------------------------------------------------->
-        
-<!-- 컨텐츠 -->
-    <!-- 모달 시작-->
-    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+
+        <!-- 컨텐츠 -->
+        <!-- 모달 시작-->
+        <!-- <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -240,111 +240,129 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--모달 끝-->
+    </div> -->
+        <!--모달 끝-->
 
         <section class="content">
             <div class="container-fluid">
-                
 
-                <!-- mem-list -->
+
+                <!-- prod-list -->
                 <div class="row clearfix">
                     <div>
                         <div class="card">
-                            <div class ="header">
+                            <div class="header">
                                 <h1>
-                                    회원정보
+                                    상품 정보
                                 </h1>
                             </div>
                             <div class="body">
                                 <div class="table-responsive">
-                                    <table id ="mem-list" class="table table-bordered table-striped table-hover dataTable display">
-                                        <h4>네모내모 회원 리스트</h4>
+                                    <table id="prod-list"
+                                        class="table table-bordered table-striped table-hover dataTable display">
+                                        <h4>네모내모 상품 리스트</h4>
                                         <thead>
                                             <tr>
                                                 <th>번호</th>
-                                                <th>상점명</th>
-                                                <th>등급</th>
-                                                <th>연락처</th>
-                                                <th>가입일</th>
-                                                <th>블랙리스트</th>
-                                                <th>처리</th>
+                                                <th>상품 코드</th>
+                                                <th>상품명</th>
+                                                <th>카테고리</th>
+                                                <th>게시일</th>
+                                                <th>판매자(상점 이름)</th>
+                                                <th>상태 변경</th>
                                             </tr>
                                         </thead>
 
                                         <tbody>
                                             <tr>
                                                 <td>1</td>
-                                                <td>상점1102호</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>DJF2244</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center">
-                                                    <button type="button" id="add-cou-btn" data-toggle="modal" data-target="#registryModal"class ="mem-upd-btn">상세보기</button></td>
+                                                <td>상점324호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                    data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>상점1995호</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>ZNF322</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점324호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                        data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>공룡이네</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>GONG234</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점324호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                        data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>공룡이네</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>GONG234</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점324호</td>
+                                                <td class="text-center"> <button id="mod-prod-btn" type="button"
+                                                        data-toggle="modal" data-target="#registryModal"
+                                                        class="mem-upd-btn">상태수정</button></td>
+
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>공룡이네</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>GONG234</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점3224호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                        data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>공룡이네</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>GONG234</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점3224호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                    data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
+
                                             </tr>
                                             <tr>
                                                 <td>2</td>
-                                                <td>공룡이네</td>
-                                                <td>일반</td>
-                                                <td>010-5498-8849</td>
+                                                <td>GONG234</td>
+                                                <td>공룡인형</td>
+                                                <td>소품</td>
                                                 <td>2019/07/09</td>
-                                                <td>N</td>
-                                                <td class ="text-center"><button type="button" class ="mem-upd-btn">상세보기</button>
-                                                    <button type="button" class ="mem-del-btn">삭제</button></td>
+                                                <td>상점32234호</td>
+                                                <td class="text-center">
+                                                    <button id="mod-prod-btn" type="button" data-toggle="modal"
+                                                        data-target="#registryModal" class="mem-upd-btn">상태수정</button>
+                                                </td>
+
                                             </tr>
 
-                                        </tbody>                                       
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>
@@ -354,41 +372,50 @@
                 <!-- #END# 1:!  -->
             </div>
 
-            <!-- 쿠폰 등록  -->
+            <!-- 상품 상태 변경  -->
             <div class="modal fade" id="registryModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <div class="modal-flex--center">
-                                <h2 class="modal-title" id="category-modal-title">쿠폰 추가</h2>
+                                <h2 class="modal-title" id="category-modal-title">상품 상태 변경</h2>
                             </div>
                         </div>
                         <div class="modal-body">
                             <div class="modal-flex--column">
                                 <div class="modal-flex--body">
-                                    <p><strong>상점명</strong></p>
-
-                                    <div class="form-group form-group-lg">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="상점명을 입력하세요" />
+                                    <p><strong>상태</strong></p>
+                                    <div class="modal-row--content">
+                                        <div class="input-group input-group-lg">
+                                            <span class="input-group-addon">
+                                                <input type="radio" class="with-gap" id="sale"
+                                                    name="productStatus" value="1">
+                                                <label for="sale">판매중</label>
+                                            </span>
+                                            <span class="input-group-addon">
+                                                <input type="radio" class="with-gap" id="sale-pause"
+                                                    name="productStatus" value="2">
+                                                <label for="sale-pause">판매중지</label>
+                                            </span>
+                                            <span class="input-group-addon">
+                                                <input type="radio" class="with-gap" id="sale-complete"
+                                                    name="productStatus" value="3">
+                                                <label for="sale-complete">판매완료</label>
+                                            </span>
+                                            <span class="input-group-addon">
+                                                <input type="radio" class="with-gap" id="reservation"
+                                                    name="productStatus" value="4">
+                                                <label for="reservation">예약중</label>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>쿠폰명</strong></p>
-                                    <!-- 각종 카테고리가 들어가야함 -->
-                                    <select class="form-control show-tick" id="select-coupon-type">
-                                        <option>배송비지원</option>
-                                        <option>첫구매</option>
-                                        <option>생일쿠폰</option>
-                                    </select>
-                                </div>
                             </div>
-                        </div>
+                        </div>      
                         <div class="modal-footer">
                             <div class="modal-flex--center">
                                 <button type="button" class="btn btn-link waves-effect bg-blue"
-                                    id="categoryModalRegistryBtn">추가하기</button>
+                                    id="categoryModalRegistryBtn">변경</button>
                                 <button type="button" class="btn btn-link waves-effect bg-red"
                                     data-dismiss="modal">취소</button>
                             </div>
@@ -396,6 +423,7 @@
                     </div>
                 </div>
             </div>
+            
         </section>
 
 
@@ -434,8 +462,8 @@
         <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>
-        <script type="text/javascript" src="member_CRUD_script.js"></script>
-      
+        <script type="text/javascript" src="products_list.js"></script>
+
 
         <!-- Demo Js -->
         <script src="../js/demo.js"></script>
