@@ -1,36 +1,43 @@
 $(function () {
     
-    Morris.Bar({
+    Morris.Donut({
         element: 'bar_chart',
         data: [{
-            x: '2020-01-01',
-            y: 3,
-            z: 2,
-            a: 3
+            label: '서울',
+            value: 21
         }, {
-                x: '2020-02-01',
-                y: 2,
-                z: null,
-                a: 1
+                label: '경기도',
+                value: 17
             }, {
-                x: '2020-03-01',
-                y: 0,
-                z: 2,
-                a: 4
+                label: '강원도',
+                value: 7
             }, {
-                x: '2020-04-01',
-                y: 2,
-                z: 4,
-                a: 3
+                label: '충청북도',
+                value: 12
+            }, {
+                label: '충청남도',
+                value: 11
+            }, {
+                label: '전라북도',
+                value: 7
+            }, {
+                label: '전라남도',
+                value: 8
+            }, {
+                label: '경상북도',
+                value: 7
+            }, {
+                label: '경상남도',
+                value: 11
+            }, {
+                label: '제주도',
+                value: 1
             }],
-        xkey: 'x',
-        ykeys: ['y', 'z', 'a'],
-        labels: ['Y', 'Z', 'A'],
-        barColors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(0, 150, 136)'],
+        colors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(255, 152, 0)', 'rgb(22, 150, 136)', 'rgb(121, 30, 99)', 'rgb(123, 222, 212)', 'rgb(131, 152, 0)', 'rgb(0, 54, 255)', 'rgb(255, 0, 42)', 'rgb(132, 255, 100)'],
+        formatter: function (y) {
+            return y + '%'
+        }
     });
-    $('#statics-image__btn').click(function() {
-        pdfPrint().then();
-    })
 
     
 
@@ -199,25 +206,6 @@ function getMorris(type, element) {
             lineColors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(0, 150, 136)']
         });
     } else if (type === 'donut') {
-        Morris.Donut({
-            element: element,
-            data: [{
-                label: 'Jam',
-                value: 25
-            }, {
-                    label: 'Frosted',
-                    value: 40
-                }, {
-                    label: 'Custard',
-                    value: 25
-                }, {
-                    label: 'Sugar',
-                    value: 10
-                }],
-            colors: ['rgb(233, 30, 99)', 'rgb(0, 188, 212)', 'rgb(255, 152, 0)', 'rgb(0, 150, 136)'],
-            formatter: function (y) {
-                return y + '%'
-            }
-        });
+       
     }
 }

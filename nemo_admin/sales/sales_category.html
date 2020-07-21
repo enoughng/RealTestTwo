@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>네모내모</title>
     <!-- Favicon-->
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
@@ -17,31 +17,31 @@
     <!-- Bootstrap Core Css -->
     <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap Select Css -->
-    <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
-
     <!-- Waves Effect Css -->
     <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
     <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- Bootstrap Material Datetime Picker Css -->
+    <link href="../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet" />
+
+    <!-- Bootstrap DatePicker Css -->
+    <link href="../plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+
     <!-- Morris Chart Css-->
     <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
 
     <!-- 공통 CSS -->
     <link href="../css/style.css" rel="stylesheet">
-    <link href="css/site_category.css" rel="stylesheet">
 
     <!--  테마 색상  -->
     <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
 
-    <!-- JQuery DataTable Css -->
-    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
-
-    <style>
-
-    </style>
+    <!-- My Css-->
+    <link href="sales_product.css" rel="stylesheet">
 </head>
 
 <body class="theme-red">
@@ -180,7 +180,7 @@
             <!-- 어드민 정보 -->
             <div class="user-info">
                 <div>
-                    <img src="../images/bungaeLogo.png" alt="User" />
+                    <img src="#" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
@@ -212,7 +212,7 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">widgets</i>
+                            <i class="material-icons">account_circle</i>
                             <span>회원관리</span>
                         </a>
                         <ul class="ml-menu">
@@ -232,12 +232,12 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">assignment</i>
+                            <i class="material-icons">desktop_mac</i>
                             <span>사이트 관리</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="site_category.html">카테고리 관리</a>
+                                <a href="#">카테고리 관리</a>
                             </li>
                             <li>
                                 <a href="#">배너(광고) 관리</a>
@@ -258,12 +258,26 @@
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">swap_calls</i>
+                            <i class="material-icons">widgets</i>
                             <span>상품 관리</span>
                         </a>
                         <ul class="ml-menu">
                             <li>
                                 <a href="#">상품관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">attach_money</i>
+                            <span>거래 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">주문 내역 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">결제 관리</a>
                             </li>
                         </ul>
                     </li>
@@ -327,127 +341,100 @@
             <div class="container-fluid">
                 <div class="card">
                     <div class="header">
-                        <h1>
-                            카테고리 목록
-                        </h1>
-                        <ul class="header-dropdown m-r--5">
-                            <li class="dropdown">
-                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown"
-                                    role="button" aria-haspopup="true" aria-expanded="false">
-                                    <i class="material-icons">more_vert</i>
-                                </a>
-                                <ul class="dropdown-menu pull-right">
-                                    <li><a href="javascript:void(0);">Action</a></li>
-                                    <li><a href="javascript:void(0);">Another action</a></li>
-                                    <li><a href="javascript:void(0);">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <h1>카테고리별 판매 현황</h1>
                     </div>
                     <div class="body">
-                        <div class="table-responsive" style="overflow-x: hidden;">
-                            <div class="category-flex">
-                                <button type="button" class="btn bg-pink waves-effect m-r-20" data-toggle="modal"
-                                    data-target="#registryModal">카테고리 등록</button>
-                                <button type="button" class="btn bg-pink waves-effect m-r-20">카테고리 수정</button>
-                                <button type="button" class="btn bg-pink waves-effect m-r-20">카테고리 삭제
-
-                                </button>
-                                <!-- <label class="label-export">외부파일로 저장하기</label> -->
-                            </div>
-                            <table class="table table-bordered table-striped table-hover category-table">
-                                <thead>
-                                    <tr>
-                                        <th>카테고리 코드</th>
-                                        <th>대분류</th>
-                                        <th>중분류</th>
-                                        <th>소분류</th>
-                                    </tr>
-                                </thead>
-                            </table>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 list__b" style="margin-bottom: 25px; border-bottom: 1px solid #AAAAAA">
+                            <button type="button" class="btn btn-success waves-effect">
+                                <span>패션/잡화</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>디지털/가전</span>
+                            </buttom>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>여성의류</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>남성의류</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>도서/티켓취미/애완</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>생활/문구/가구/식품</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>유아동/출산</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>스타굿즈</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>뷰티/미용</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>스포츠/레저</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>기타</span>
+                            </button>
+                            <button type="button" class="btn btn-danger waves-effect">
+                                <span>재능</span>
+                            </button>
                         </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  m-p-0" >
+                            <h4 class="col-lg-2 col-md-2 col-sm-2 col-xs-2">기간검색</h4>
+                            <div class="m-b-0 col-lg-2 col-md-2 col-sm-2 col-xs-2 m-p-0">
+                                <div class="input-group date" id="sales_product_prev">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="날짜를 입력해주세요">
+                                    </div>
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-xs-1 text-c m-p-0">
+                                <span class="very-strong-word">-</span>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 m-p-0">
+                                <div class="input-group date" id="sales_product_next">
+                                    <div class="form-line">
+                                        <input type="text" class="form-control" placeholder="날짜를 입력해주세요">
+                                    </div>
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">date_range</i>
+                                    </span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-danger waves-effect m-l-50">
+                                <span>찾기</span>
+                            </button>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-p-0">
+                            <h4 class="col-lg-2 col-md-2 col-sm2 col-xs-2">저장하기</h4>
+                            <button class="btn waves-effect bg-pink" id="statics-image__btn">이미지 파일</button>
+                            <button class="btn waves-effect bg-pink">CSV</button>
+                            <button class="btn waves-effect bg-pink">엑셀 파일</button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 m-p-0">
+                            <h4 class="col-lg-2 col-md-2 col-sm2 col-xs-2">기간별로 보기</h4>
+                            <button class="btn waves-effect bg-pink" id="statics-image__btn">연간</button>
+                            <button class="btn waves-effect bg-pink">월간</button>
+                            <button class="btn waves-effect bg-pink">주간</button>
+                        </div>
+                        <div></div>
+                        <div class="clearfix"></div>
+                        <div id="bar_chart" class="graph"></div>
                     </div>
                 </div>
+                <!-- #END# Line Chart -->
             </div>
-
-
-            <!-- 등록 카테고리 -->
-            <div class="modal fade" id="registryModal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="modal-flex--center">
-                                <h3 class="modal-title" id="category-modal-title">신규 카테고리 등록</h3>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="modal-flex--column">
-                                <div class="modal-flex--body">
-                                    <p><strong>분류</strong></p>
-                                    <div class="modal-row--content">
-                                        <div class="input-group input-group-lg">
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="lg-category"
-                                                    name="categoryType" value="1">
-                                                <label for="lg-category">대분류</label>
-                                            </span>
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="md-category"
-                                                    name="categoryType" value="2">
-                                                <label for="md-category">중분류</label>
-                                            </span>
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="sm-category"
-                                                    name="categoryType" value="3">
-                                                <label for="sm-category">소분류</label>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>대분류</strong></p>
-                                    <!-- 각종 카테고리가 들어가야함 -->
-                                    <select class="form-control show-tick" id="lg-category--select">
-                                        <option>대대대</option>
-                                        <option>중중</option>
-                                        <option>소</option>
-                                    </select>
-                                </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>중분류</strong></p>
-                                    <!-- 각종 카테고리가 들어가야함 -->
-                                    <select class="form-control show-tick" id="md-category--select">
-                                        <option>중중중</option>
-                                        <option>소소</option>
-                                        <option>대</option>
-                                    </select>
-                                </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>카테고리 명</strong></p>
-
-                                    <div class="form-group form-group-lg">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="카테고리명을 입력해주세요" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <div class="modal-flex--center">
-                                <button type="button" class="btn btn-link waves-effect bg-blue"
-                                    id="categoryModalRegistryBtn">등록</button>
-                                <button type="button" class="btn btn-link waves-effect bg-red"
-                                    data-dismiss="modal">취소</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </section>
         <!-------------------------------------------SECTION--------------------------------------------------->
+
 
 
 
@@ -466,17 +453,6 @@
         <!-- Waves Effect Plugin Js -->
         <script src="../plugins/node-waves/waves.js"></script>
 
-        <!-- Jquery DataTable Plugin Js -->
-        <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
-        <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
-        <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
-
         <!-- Jquery CountTo Plugin Js -->
         <script src="../plugins/jquery-countto/jquery.countTo.js"></script>
 
@@ -484,10 +460,24 @@
         <script src="../plugins/raphael/raphael.min.js"></script>
         <script src="../plugins/morrisjs/morris.js"></script>
 
+        <!-- 이상한거 -->
+        <script src="jspdf.min.js"></script>
+        <script src="bluebird.min.js"></script>
+        <script src="html2canvas.min.js"></script>
+
+        <!-- Moment Plugin Js -->
+        <script src="../plugins/momentjs/moment.js"></script>
+
+        <!-- Bootstrap Material Datetime Picker Plugin Js -->
+        <script src="../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+
+        <!-- Bootstrap Datepicker Plugin Js -->
+        <script src="../plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>
-        <script src="../js/pages/tables/jquery-datatable.js"></script>
-        <script src="site_category.js"></script>
+        <script src="../js/pages/charts/morris.js"></script>
+        <script src="sales_product_datepicker.js"></script>
 
         <!-- Demo Js -->
         <script src="../js/demo.js"></script>

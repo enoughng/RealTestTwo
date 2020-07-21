@@ -36,13 +36,22 @@ $(function () {
         responsive: true
     });
 
-    //Exportable table
-    $('.js-exportable').DataTable({
-        dom: 'Bfrtip',
-        responsive: true,
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
+    const data = {
+        result: 'success',
+        category: {
+            title: '패션잡화',
+            category: [{
+                title: '남성의류',
+            }]
+        }   
+    };
+
+    
+
+    $('#categoryModalRegistryBtn').on('click', function() {
+        table.row.add({
+                
+        });
     });
 >>>>>>> 8869bf8b14ee7446a0ad7f514bad0ef839419561
 });
