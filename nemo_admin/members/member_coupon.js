@@ -1,14 +1,15 @@
-
-
 /* 한국어 처리 */
 $(function () {
-    const table = $('#mem-care-list').DataTable({
+    const table = $('#mem-coupon-list').DataTable({
         responsive: true,
         // ajax: "category_example.json",
         //   buttons: {              
         //     name: 'primary',
         //     buttons: [ 'copy', 'csv', 'excel', 'pdf'],
         // },
+
+
+    
         "language": {
             "decimal":        "",
             "emptyTable":     "표에서 사용할 수있는 데이터가 없습니다.",
@@ -18,7 +19,7 @@ $(function () {
             "infoPostFix":    "",
             "thousands":      ",",
             "lengthMenu":     "페이지 수 : _MENU_개",
-            "search":         "검색: ",
+            "search":         "회원검색: ",
             "zeroRecords":    "일치하는 레코드가 없습니다.",
             "paginate": {
                 "first":      "처음",
@@ -34,10 +35,3 @@ $(function () {
     });
 
 });
-
-$(function () {
-    $('#mem-care-list tbody').on('click', '.to_reply', function(){
-        location.href="member_care_detail.html";
-    });
-});
-

@@ -6,34 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>네모내모</title>
-    <!-- Favicon-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+      type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
-        type="text/css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+  <!-- Bootstrap Core Css -->
+  <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Bootstrap Core Css -->
-    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- Bootstrap Select Css -->
+  <link href="../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
 
-    <!-- Waves Effect Css -->
-    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+  <!-- Waves Effect Css -->
+  <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
 
-    <!-- Animation Css -->
-    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+  <!-- Animation Css -->
+  <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Morris Chart Css-->
-    <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
+  <!-- Morris Chart Css-->
+  <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
 
-    <!-- 공통 CSS -->
-    <link href="../css/style.css" rel="stylesheet">
+  <!-- 공통 CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="member_report.css" rel="stylesheet">
 
-    <!--  테마 색상  -->
-    <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
+  <!--  테마 색상  -->
+  <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
+
+  <!-- JQuery DataTable Css -->
+  <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 </head>
 
 <body class="theme-red">
+ 
 
     <!-- Top Bar -->
     <nav class="navbar">
@@ -42,122 +47,8 @@
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
                     data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">네모내모 Admin</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <!-- 알림 -->
-                <ul class="nav navbar-nav navbar-right">
-
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <i class="material-icons">notifications</i>
-                            <span class="label-count">7</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">NOTIFICATIONS</li>
-                            <li class="body">
-                                <ul class="menu">
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">person_add</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>12 new members joined</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 14 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-cyan">
-                                                <i class="material-icons">add_shopping_cart</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>4 sales made</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 22 mins ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-red">
-                                                <i class="material-icons">delete_forever</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy Doe</b> deleted account</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-orange">
-                                                <i class="material-icons">mode_edit</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>Nancy</b> changed name</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 2 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-blue-grey">
-                                                <i class="material-icons">comment</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> commented your post</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 4 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-light-green">
-                                                <i class="material-icons">cached</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4><b>John</b> updated status</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> 3 hours ago
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0);">
-                                            <div class="icon-circle bg-purple">
-                                                <i class="material-icons">settings</i>
-                                            </div>
-                                            <div class="menu-info">
-                                                <h4>Settings updated</h4>
-                                                <p>
-                                                    <i class="material-icons">access_time</i> Yesterday
-                                                </p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="javascript:void(0);">View All Notifications</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- #END# 알림s -->
-            </div>
+                <a class="navbar-brand" href="../main.html">네모내모 Admin</a>
+            </div>    
         </div>
     </nav>
     <!-- #Top Bar -->
@@ -257,7 +148,7 @@
                         </ul>
                     </li>
 
-                                        <li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">trending_down</i>
                             <span>통계</span>
@@ -312,17 +203,73 @@
 
 
                 <!-------------------------------------------SECTION--------------------------------------------------->
-        <section class="content">
-            <div class="container-fluid">
-
-            </div>
-        </section>
+                <section class="content">
+                    <div class="container-fluid">
+                       <!-- mem-list -->
+                        <div class="row clearfix">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <div class="header">
+                                        <h1>
+                                           신고관리
+                                        </h1>
+                                    </div>
+        
+                                    <div class="body">
+                                        <div class="table-responsive">
+                                            <table id ="mem-report-list" class="table table-bordered table-striped table-hover dataTable display text-center">
+                                                <h4>상점 신고목록</h4>
+                                                <thead>
+                                                    <tr>
+                                                        <th>신고번호</th>
+                                                        <th>상점</th>
+                                                        <th>사유</th> <!-- 소분류 -->
+                                                        <th>기타내용</th>
+                                                        <th>신고일</th>
+                                                        <th>신고자</th>
+                                                        <th>관련URL</th>
+                                                        <th>조치</th>
+                                                        <th>처리</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class ="col-md-1">1</td>
+                                                        <td class ="col-md-1">상점1102호</td>
+                                                        <td>어플광고</td>
+                                                        <td>광고로 도배했어요</td>
+                                                        <td>2019/05/07</td>
+                                                        <td>호랑이네</td>
+                                                        <td><a href="www.naver.com" alt="글"></a></td>
+                                                        <td class ="col-md-1"></td>
+                                                        <td class ="col-md-1"><span class="label label-default">미완료</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class ="col-md-1">1</td>
+                                                        <td class ="col-md-2">공룡이네</td>
+                                                        <td>언어폭력</td>
+                                                        <td>-</td>
+                                                        <td>2019/05/07<span class="label label-warning">New</span></td>
+                                                        <td>호랑이네</td>
+                                                        <td><a href="www.naver.com" alt="글"></a>
+                                                        <td class ="col-md-1"><span class="label bg-black">블랙리스트</span></td>
+                                                        <td class ="col-md-1"><span class="label label-primary">처리완료</span></td>
+                                                    </tr>
+                                                   
+                                                </tbody>                                       
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-------------------------------------------SECTION--------------------------------------------------->
         
         
-        
-        
-                <!-- Jquery Core Js -->
+    
+        <!-- Jquery Core Js -->
         <script src="../plugins/jquery/jquery.min.js"></script>
 
         <!-- Bootstrap Core Js -->
@@ -337,6 +284,17 @@
         <!-- Waves Effect Plugin Js -->
         <script src="../plugins/node-waves/waves.js"></script>
 
+        <!-- Jquery DataTable Plugin Js -->
+        <script src="../plugins/jquery-datatable/jquery.dataTables.js"></script>
+        <script src="../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+        <script src="../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+
         <!-- Jquery CountTo Plugin Js -->
         <script src="../plugins/jquery-countto/jquery.countTo.js"></script>
 
@@ -346,10 +304,10 @@
 
         <!-- Custom Js -->
         <script src="../js/admin.js"></script>
-        <script src="../js/pages/index.js"></script>
 
         <!-- Demo Js -->
         <script src="../js/demo.js"></script>
+        <script type="text/javascript" src="member_report.js"></script>
 </body>
 
 </html>

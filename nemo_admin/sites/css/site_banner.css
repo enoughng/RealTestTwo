@@ -1,3 +1,6 @@
+h1{
+    margin-bottom : 50px;
+}
 
 .table-responsive{
     overflow: hidden;
@@ -49,7 +52,6 @@ p{
     justify-content: space-evenly;
 }
 
-<<<<<<< HEAD
 /*삭제 팝업 모달 끝*/
 
 
@@ -63,25 +65,29 @@ p{
     overflow: auto;
 }
 
-.mem-del-btn{
+.banner-del-btn{
     background-color: red;
     color : white;
     border-style: none;
     
 }
-.mem-upd-btn{
+.banner-upd-btn{
     background-color: skyblue;
     color : white;
     border-style: none;
-    
 }
 
 td{
-   text-align: center;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 th{
     text-align : center;
 }
-=======
-/*로그아웃 팝업 모달 끝*/
->>>>>>> 8869bf8b14ee7446a0ad7f514bad0ef839419561
+
+.banner_table-top {
+    display: flex;
+    flex-flow: row wrap;
+}
+

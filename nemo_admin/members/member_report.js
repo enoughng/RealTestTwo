@@ -2,7 +2,7 @@
 
 /* 한국어 처리 */
 $(function () {
-    const table = $('#mem-care-list').DataTable({
+    const table = $('#mem-report-list').DataTable({
         responsive: true,
         // ajax: "category_example.json",
         //   buttons: {              
@@ -34,10 +34,3 @@ $(function () {
     });
 
 });
-
-$(function () {
-    $('#mem-care-list tbody').on('click', '.to_reply', function(){
-        location.href="member_care_detail.html";
-    });
-});
-

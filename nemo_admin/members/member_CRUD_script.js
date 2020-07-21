@@ -21,7 +21,7 @@ $(function () {
     });
     
 table.dataTable({
-
+        responsive: true,
         language: {
             "decimal": "",
             "emptyTable": "표에서 사용할 수있는 데이터가 없습니다.",
