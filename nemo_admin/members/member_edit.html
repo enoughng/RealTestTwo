@@ -103,16 +103,16 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="members/member_CRUD.html">회원정보</a>
+                                <a href="member_CRUD.html">회원정보</a>
                             </li>
                             <li>
-                                <a href="members/member_care.html">1:1문의</a>
+                                <a href="member_care.html">1:1문의</a>
                             </li>
                             <li>
-                                <a href="members/member_coupon.html">회원쿠폰</a>
+                                <a href="member_coupon.html">회원쿠폰</a>
                             </li>
                             <li>
-                                <a href="members/member_report.html">신고관리</a>
+                                <a href="member_report.html">신고관리</a>
                             </li>
                         </ul>
                     </li>
@@ -384,70 +384,63 @@
              <div class="modal fade" id="registryModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="modal-flex--center">
-                                <h3 class="modal-title" id="category-modal-title">신규 카테고리 등록</h3>
-                            </div>
-                        </div>
                         <div class="modal-body">
-                            <div class="modal-flex--column">
-                                <div class="modal-flex--body">
-                                    <p><strong>분류</strong></p>
-                                    <div class="modal-row--content">
-                                        <div class="input-group input-group-lg">
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="lg-category"
-                                                    name="categoryType" value="1">
-                                                <label for="lg-category">대분류</label>
-                                            </span>
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="md-category"
-                                                    name="categoryType" value="2">
-                                                <label for="md-category">중분류</label>
-                                            </span>
-                                            <span class="input-group-addon">
-                                                <input type="radio" class="with-gap" id="sm-category"
-                                                    name="categoryType" value="3">
-                                                <label for="sm-category">소분류</label>
-                                            </span>
-                                        </div>
-                                    </div>
+                                <div class="header">
+                                    <h2>
+                                        거래내역 상세보기
+                                    </h2>
                                 </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>대분류</strong></p>
-                                    <!-- 각종 카테고리가 들어가야함 -->
-                                    <select class="form-control show-tick" id="lg-category--select">
-                                        <option>대대대</option>
-                                        <option>중중</option>
-                                        <option>소</option>
-                                    </select>
+                                <div class="body table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>거래 날짜</th>
+                                                <th>카테고리</th>
+                                                <th>상품</th>
+                                                <th>거래 금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2020/07/23</td>
+                                                <td>전자기기</td>
+                                                <td>에어팟</td>
+                                                <td>50000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>중분류</strong></p>
-                                    <!-- 각종 카테고리가 들어가야함 -->
-                                    <select class="form-control show-tick" id="md-category--select">
-                                        <option>중중중</option>
-                                        <option>소소</option>
-                                        <option>대</option>
-                                    </select>
-                                </div>
-                                <div class="modal-flex--body">
-                                    <p><strong>카테고리 명</strong></p>
-
-                                    <div class="form-group form-group-lg">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="카테고리명을 입력해주세요" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="modal-footer">
                             <div class="modal-flex--center">
-                                <button type="button" class="btn btn-link waves-effect bg-blue"
-                                    id="categoryModalRegistryBtn">등록</button>
                                 <button type="button" class="btn btn-link waves-effect bg-red"
-                                    data-dismiss="modal">취소</button>
+                                    data-dismiss="modal">확인</button>
                             </div>
                         </div>
                     </div>
