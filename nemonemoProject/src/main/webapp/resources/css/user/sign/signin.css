@@ -18,6 +18,8 @@
 }
 
 .signin-box {
+    display: flex;
+    flex-direction: column;
     margin-top: 35px;
 }
 .info-input-outline{
@@ -36,7 +38,15 @@
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    flex-direction: flow;
 }
+
+.veridation-msg {
+    color: rgb(247, 47, 51);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
 .signin-img{
         width: 40px;
         display: flex;
@@ -47,6 +57,20 @@
         align-items: center;
         flex-shrink: 0;
 }
+
+.input-box .verify {
+    background-color: #EE5058;
+    cursor: pointer;
+}
+.input-box .verify--active {
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+
+
+
+
 .input-box input {
     width: 100%;
     height: 100%;
@@ -88,7 +112,9 @@
     
 }
 .select-for-recommend{
+    width: 100%;
     display : flex;
+    flex-flow: column;
 }
 .select-space-right{
     padding-right : 10px;
@@ -189,6 +215,7 @@
 
 .hide-btn img {
     transform: rotate(180deg);
+    transition: all 0.5s ease 0s;
 }
 
 .show-btn img {
@@ -251,11 +278,14 @@
 }
 
 
+.select-form {
+    width: 100%;
+}
 
 
-
-
-
+.hide {
+    display: none;
+}
 
 
 
@@ -343,4 +373,68 @@ html, body {
 
 body {
     line-height: 1;
+}
+
+
+.gender-check {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.gender-check > *:first-child,
+.birth-year > *:first-child {
+    margin-right: 0px;
+}
+.gender-check > *,
+.birth-year > * {
+    font-size: 1rem;
+    margin-right: 10px;
+    
+}
+
+.gender-check > *:last-child
+.birth-year > *:last-child {
+    margin-right: 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.birth-year {
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.info-gender-outline {
+    display: flex;
+    flex-flow: row;
+}
+
+
+.birth-year .i-img {
+    width: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.birth-year svg {
+    font-size: 20px;
+    color: #AAAAAA;
+}
+
+.birth-year > select {
+    border: 1px solid #DDDDDD;
+
+}
+
+.gender-check label input[type="radio"]:before{
+    margin-right: 20px;
 }
