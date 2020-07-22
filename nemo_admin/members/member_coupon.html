@@ -201,6 +201,33 @@
 
         <!-------------------------------------------SECTION--------------------------------------------------->
         <section class="content">
+
+            <!-- 모달 시작-->
+            <div class="modal fade" id="smallModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center modal-col-red" id="smallModalLabel">주의</h3>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="text-center"> 회원 쿠폰 삭제</h3>
+                            <h5 class="text-center">
+                                확인 버튼을 누르시면</h5>
+                            <h5 class="text-center">해당 고객의 쿠폰은 삭제가 됩니다.</h5>
+                            <h5 class="text-center">삭제 하시겠습니까?</h5>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button id="mem-coup-del-confirm" type="button" class="btn btn-link waves-effect"
+                                data-dismiss="modal">삭제</button>
+                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">취소</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--모달 끝-->
+
+
             <div class="container-fluid">
                 <!-- mem-list -->
                 <div class="row clearfix">
@@ -216,9 +243,10 @@
                                 <div class="table-responsive">
                                     <table id="mem-coupon-list"
                                         class="table table-bordered table-striped table-hover dataTable display text-center">
-                                        <div class = "add-coupon-title">
-                                        <button id="add-cou-btn" type="button" class="btn bg-green waves-effect m-r-20"
-                                            data-toggle="modal" data-target="#registryModal">쿠폰 지급하기</button>
+                                        <div class="add-coupon-title">
+                                            <button id="add-cou-btn" type="button"
+                                                class="btn bg-green waves-effect m-r-20" data-toggle="modal"
+                                                data-target="#registryModal">쿠폰 지급하기</button>
                                         </div>
                                         <thead>
                                             <tr>

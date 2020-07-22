@@ -35,3 +35,14 @@ $(function () {
     });
 
 });
+
+/* 쿠폰 삭제 구현 */
+$(function () {
+    $('#mem-coupon-list tbody').on('click', '.del-coupon', function(){
+        const selected = this;
+        $('#smallModal').modal("toggle");
+        if($('#mem-coup-del-confirm').click(function(){
+            $(selected).closest('tr').remove();
+        }));
+    });
+});
