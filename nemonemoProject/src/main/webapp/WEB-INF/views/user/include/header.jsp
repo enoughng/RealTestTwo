@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <div class="main_header container-md">
 	<div class="flex">
 		<!-- 로고 영역 -->
 		<a href="#" id="main-logo-area"><img
-			src="/resources/images/header/mainLogo.png" alt="mainLogo"
+			src="<c:url value="/resources/images/user/common/mainLogo.png"/>" alt="mainLogo"
 			id="main-logo"></a>
 		<!-- 검색창 영역 -->
 		<div class="search">
@@ -22,7 +23,7 @@
 							class="recommend-message" id="searched-box-store">상점명으로 검색</span>
 					</div>
 					<div id="search-close-div">
-						<a href="#" class="search-close">닫기</a>
+						<a href="#" class	="search-close">닫기</a>
 					</div>
 				</div>
 
@@ -36,16 +37,16 @@
 					</ul>
 					<!-- 검색 버튼 아이콘 -->
 				</div>
-				<a href="#"><img src="/resources/images/header/search_icon.png"
+				<a href="#"><img src="<c:url value="/resources/images/user/common/search_icon.png"/>"
 					alt="검색 버튼 아이콘" id="search-icon"></a>
 			</div>
 		</div>
 		<!-- 우측메뉴 -->
 		<div class="my-menu">
 			<a class="my-menu-box" href="#"> <img
-				src="/resources/images/header/sell2.png" alt="판매하기아이콘"
+				src="<c:url value="/resources/images/user/common/sell2.png"/>" alt="판매하기아이콘"
 				id="sell-icon">&nbsp;&nbsp;판매하기
-			</a> <a href="#"> <img src="/resources/images/header/my_store.png"
+			</a> <a href="#"> <img src="<c:url value="/resources/images/user/common/my_store.png"/>"
 				alt="내상점아이콘" id="store-icon">&nbsp;&nbsp;내 상점
 			</a>
 		</div>

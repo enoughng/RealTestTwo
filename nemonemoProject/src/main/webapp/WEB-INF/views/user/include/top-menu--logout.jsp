@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
     
 <html>
@@ -207,7 +208,7 @@
        <nav class="top navbar nav-expand-sm navbar-light top-nav">
         <div class="top-menus">
             <div class="nav-box">
-                <button class="btn-layout"><img src="/resources/images/top-menu/fav.png" width="20" height="18"
+                <button class="btn-layout"><img src="<c:url value="/resources/images/user/common/fav.png"/>" width="20" height="18"
                         alt="즐겨찾기아이콘">&nbsp;&nbsp;즐겨찾기</button>
             </div>
             <div class="nav-box">
@@ -231,8 +232,7 @@
                         <div class="alert-content-box">
                             <a class="alert-anchor" href="#">
                                 <div class="alert-content">
-                                    상점1111118호님이 회원님의 상점에 문의를 남겼습니다.
-                                    <br>
+                                    상점1111118호님이 회원님의 상점에 문의를 남겼습니다.<br>
                                     <span>3일 전</span>
                                 </div>
                             </a>
