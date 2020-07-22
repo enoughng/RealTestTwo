@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="<c:url value="/resources/vendor/common/stylesheets/theme-red.css"/>">
     
 </head>
-<body>
+<body class="theme-red">
 <div class="main_header container-md">
 	 <!-- Top Bar -->
     <nav class="navbar">
@@ -118,7 +118,7 @@
         <script src="<c:url value="/resources/vendor/plugins/jquery-sparkline/jquery.sparkline.js"/>"></script>
         
       <!--   <script src="js/pages/index.js"></script> -->
-        <script src="<c:url value="/resources/vendor/common/pages/index.js"/>"></script>
+         <script src="<c:url value="/resources/vendor/common/javascript/pages/index.js"/>"></script>
         
         <!-- <script type="text/javascript.js" src ="main.js"></script> -->
 
