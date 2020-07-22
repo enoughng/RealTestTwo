@@ -17,7 +17,7 @@ $(function () {
 /* 회원 수정 페이지로 */
 $(function () {
     $('#mem-list tbody').on('click', '.mem-upd-btn', function(){
-        location.href="member_edit.html";
+        location.href="member_info_detail.html";
     });
     
 table.dataTable({
