@@ -38,7 +38,7 @@ $(function () {
 $(function () {
     $('#mem-care-list tbody').on('click', '.to_reply', function(){
 
-        location.href="member_care_detail.html";
+        location.href="member_care_reply.html";
     });
 });
 
