@@ -1,0 +1,308 @@
+/*거래하기 부분*/
+
+.bunp__header {
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 50px;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+/*버튼 해더*/ 
+.bunp__header>.bunp__header--close {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 31px;
+    width: 16px;
+    height: 16px;
+    font-size: 18px;
+    background-image: url(https://assets.bunjang.co.kr/static/bunp/img/sprite.png?c33b67821e67);
+    background-repeat: no-repeat;
+    background-size: 354px 39px;
+    background-position: 0 0;
+}
+
+/*버튼 CSS*/
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*컨테이너 영역*/
+.container.btn_big {
+    padding-bottom: 72px;
+}
+.container.bunp__for-web {
+    padding-top: 45px;
+}
+
+/*판넬 1부분*/
+.panel:first-child {
+    margin-top: 7px;
+}
+.panel {
+
+    background-color: #fff;
+}
+
+/*판넬 헤더*/
+
+.panel .panel__header {
+    height: 43px;
+    padding: 0 15px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 43px;
+    
+}
+
+.panel .panel__header h2 {
+    float: left;
+    color: #212121;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.panel .panel__header--btn {
+    float: right;
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+.panel .panel__content {
+    padding: 0px 15px;
+}
+
+.screen-reader-only {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+.panel .panel__content .panel__content--img {
+    border: none;
+}
+
+.panel tr {
+    position: relative;
+}
+
+.panel .panel__content .panel__content--img th {
+    padding-left: 0px;
+}
+.panel .panel__content .panel__content--img th, .panel .panel__content .panel__content--img td {
+    padding: 0px;
+}
+
+.panel tr th {
+   
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.panel .panel__content .panel__content--img-lg th .img__wrap {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 17px;
+}
+.panel .panel__content .panel__content--img th .img__wrap {
+    
+    margin-top: 17px;
+    background-color: #eee;
+}
+
+.panel .panel__content .panel__content--img-lg th .img__wrap img {
+    height: 70px;
+}
+
+.panel .panel__content .panel__content--img th .img__wrap img {
+    width: 100%;
+    color: transparent;
+}
+
+.panel .panel__content .panel__content--img th, .panel .panel__content .panel__content--img td {
+    padding: 0px;
+}
+
+.panel tr td {
+    position: relative;
+    font-size: 15px;
+}
+
+.panel .panel__content .panel__content--img-lg td p {
+    margin-left: -17px;
+}
+
+.panel .panel__content .panel__content--img td p {
+  
+    font-size: 15px;
+}
+
+/*p부분*/
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.panel .panel__content .panel__content--img-lg td p {
+    margin-left: -17px;
+}
+
+.panel .panel__content input[type="text"] {
+    width: 100%;
+}
+input[type='text'], input[type='password'], input[type='submit'], input[type='search'], input[type='tel'], input[type='number'], input[type='email'] {
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.panel .panel__content .panel__content--img .img__price {
+    font-size: 16px;
+    font-weight: bold;
+}
+.panel .panel__content .panel__content--img-lg td p {
+    margin-left: -17px;
+}
+
+.panel .panel__content .panel__content--img .img__price {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel .panel__content .panel__content--img .img__price em {
+    color: #e81e22;
+    font-weight: bold;
+}
+
+/*취소사유 부분*/
+.panel {
+    margin-top: 7px;
+    background-color: #fff;
+}
+
+.panel .panel__header {
+    height: 43px;
+    padding: 0 15px;
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 43px;
+}
+
+.panel .panel__header h2 {
+    float: left;
+    color: #212121;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.panel .panel__content {
+    padding: 0px 15px;
+}
+
+.panel .panel__content .panel__content--cancel-reason {
+    padding: 14px 0 12px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.popup_block {
+    display: none;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    position: fixed;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    width: auto;
+}
+
+.popup_block .confirm_text {
+    padding: 30px;
+    text-align: center;
+}
+
+.btn_area {
+   
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: justify;
+    -webkit-box-orient: horizontal;
+    width: 100%;
+    height: 42px;
+}
+
+.btn_area>button:first-child {
+    border-left: 0;
+    border-right: 1px solid #cacaca;
+}
+.btn_area>button {
+    display: block;
+    -webkit-box-flex: 1;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    line-height: 42px;
+    background: #b3b3b3;
+}
+
+
+.btn_area>button {
+    display: block;
+    -webkit-box-flex: 1;
+    width: 100%;
+    height: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    line-height: 42px;
+    border-left: 1px solid #7d7d7d;
+    background: #b3b3b3;
+}
+
+.popup_block {
+    display: none;
+    top: 50%;
+    left: 20px;
+    right: 20px;
+    z-index: 1000;
+    position: fixed;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    width: auto;
+}

@@ -1,0 +1,122 @@
+.in_1{
+
+        height: 100%;
+        width: 100%;
+        max-width: 570px;
+        position: relative;
+        padding: 60px;
+        background: rgb(255, 255, 255);
+        margin: 0px auto;
+    
+}
+
+.in_2{
+
+   
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background-size: 20px 20px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjQxNCAxMGw2LjI5MyA2LjI5MmMuMTg4LjE4Ny4yOTMuNDQyLjI5My43MDcgMCAuMjY1LS4xMDUuNTItLjI5My43MDctLjE4Ny4xODgtLjQ0Mi4yOTQtLjcwNy4yOTQtLjI2NiAwLS41Mi0uMTA2LS43MDctLjI5NEwxMCAxMS40MTNsLTYuMjkzIDYuMjkzYy0uMzkuMzktMS4wMjQuMzktMS40MTQgMC0uMzktLjM5LS4zOS0xLjAyMyAwLTEuNDE0TDguNTg2IDEwIDIuMjkzIDMuNzA3Yy0uMjUzLS4yNTMtLjM1MS0uNjItLjI1OS0uOTY2LjA5My0uMzQ1LjM2Mi0uNjE0LjcwNy0uNzA3LjM0NS0uMDkyLjcxMy4wMDYuOTY2LjI1OUwxMCA4LjU4NWw2LjI5My02LjI5MmMuMzktLjM5IDEuMDIzLS4zOSAxLjQxNCAwIC4zOS4zOS4zOSAxLjAyMyAwIDEuNDE0bC02LjI5MyA2LjI5MnoiLz4KPC9zdmc+Cg==);
+        width: 20px;
+        height: 20px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    
+}
+
+.in_3{
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.in_4{
+
+    position: absolute;
+    top: 196px;
+    left: 0px;
+
+}
+
+.in_5{
+
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: bold;
+    margin: 0.5rem 0px;
+}
+
+.in_6{
+
+    font-size: 1rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    color: rgb(155, 153, 169);
+}
+
+.in_7{
+
+    width: 100%;
+    display: flex;
+}
+
+.in_8{
+
+    width: 100%;
+    height: 64px;
+    font-size: 18px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-weight: bold;
+    position: relative;
+    padding: 0px 20px 0px 24px;
+    background: rgb(244, 244, 250);
+}
+
+.in_8::after {
+    content: "";
+    width: 0.5rem;
+    height: 1rem;
+    background-size: 0.5rem 1rem;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDEwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiM5Yjk5YTkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEgMjBhLjk5NC45OTQgMCAwIDAgLjc0OC0uMzM3bDgtOWEuOTk5Ljk5OSAwIDAgMCAwLTEuMzI4bC04LTlBMSAxIDAgMCAwIC4yNTQgMS42NjNMNy42NjQgMTBsLTcuNDEgOC4zMzZBLjk5OS45OTkgMCAwIDAgMSAyMCIvPgo8L3N2Zz4K);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.in_9{
+
+    position: absolute;
+    left: 60px;
+    bottom: 60px;
+    width: calc(100% - 120px);
+    height: 72px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 80, 88);
+}
+
+/*클릭했을때 나옴*/
+.in_10{
+height: 100%;
+    max-width: 570px;
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    margin: auto;
+    overflow: auto;
+}
