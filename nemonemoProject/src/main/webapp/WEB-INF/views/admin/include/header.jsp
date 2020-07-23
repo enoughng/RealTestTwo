@@ -20,10 +20,6 @@
     <!-- <link href="plugins/animate-css/animate.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="<c:url value="/resources/vendor/plugins/animate-css/animate.css"/>">
 
-    <!-- Morris Chart Css-->
-    <!-- <link href="plugins/morrisjs/morris.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="<c:url value="/resources/vendor/plugins/morrisjs/morris.css"/>">
-
     <!-- Custom Css -->
     <!-- <link href="css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="<c:url value="/resources/vendor/common/stylesheets/style.css"/>">
@@ -52,18 +48,10 @@
     <!-- #Top Bar -->
 </div>
 <!-- js -->
-	 <!-- Jquery Core Js -->
-        <!-- <script src="plugins/jquery/jquery.min.js"></script> -->
-        <script src="<c:url value="/resources/vendor/plugins/jquery/jquery.min.js"/>"></script>
-        
-        
+
         <!-- Bootstrap Core Js -->
        <!--  <script src="plugins/bootstrap/js/bootstrap.js"></script> -->
 		<script src="<c:url value="/resources/vendor/plugins/bootstrap/js/bootstrap.js"/>"></script>
-
-        <!-- Select Plugin Js -->
-       <!--  <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script> -->
-        <script src="<c:url value="/resources/vendor/plugins/bootstrap-select/js/bootstrap-select.js"/>"></script>
 
         <!-- Slimscroll Plugin Js -->
       <!--   <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script> -->

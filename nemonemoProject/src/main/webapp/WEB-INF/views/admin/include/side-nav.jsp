@@ -177,10 +177,6 @@
 	<script
 		src="<c:url value="/resources/vendor/plugins/raphael/raphael.min.js"/>"></script>
 
-	<!--  <script src="plugins/morrisjs/morris.js"></script> -->
-	<script
-		src="<c:url value="/resources/vendor/plugins/morrisjs/morris.js"/>"></script>
-
 
 	<!-- ChartJs -->
 	<!--         <script src="plugins/chartjs/Chart.bundle.js"></script> -->
@@ -218,6 +214,7 @@
 
 	<!-- Custom Js -->
 	<!--        <script src="js/admin.js"></script> -->
+	<script src="<c:url value="/resources/vendor/common/javascript/admin.js"/>"></script>
 	<script
 		src="<c:url value="/resources/vendor/plugins/jquery-sparkline/jquery.sparkline.js"/>"></script>
 
@@ -230,6 +227,8 @@
 	<!-- Demo Js -->
 	<script
 		src="<c:url value="/resources/vendor/common/javascript/demo.js"/>"></script>
+		
+
 </body>
 </html>
 
