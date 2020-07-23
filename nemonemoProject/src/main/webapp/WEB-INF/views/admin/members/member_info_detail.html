@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>회원 정보 수정</title>
+    <!-- Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet"
+        type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Morris Chart Css-->
+    <link href="../plugins/morrisjs/morris.css" rel="stylesheet" />
+
+    <!-- JQuery DataTable Css -->
+    <link href="../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- 공통 CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="member_info_detail.css" rel="stylesheet">
+
+    <!--  테마 색상  -->
+    <link href="../common/stylesheets/theme-red.css" rel="stylesheet" />
+
+</head>
+
+<body class="theme-red">
+
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="../main.html">네모내모 Admin</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <!-- 알림 -->
+                <ul class="nav navbar-nav navbar-right">
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+
+
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            <!-- 어드민 정보 -->
+            <div class="user-info">
+                <div>
+                    <img src="../images/bungaeLogo.png" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">group</i>+Add</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# 어드민 정보 -->
+
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="active">
+                        <a href="main.html">
+                            <i class="material-icons">home</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">account_circle</i>
+                            <span>회원관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="member_CRUD.html">회원정보</a>
+                            </li>
+                            <li>
+                                <a href="member_care.html">1:1문의</a>
+                            </li>
+                            <li>
+                                <a href="member_coupon.html">회원쿠폰</a>
+                            </li>
+                            <li>
+                                <a href="member_report.html">신고관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">desktop_mac</i>
+                            <span>사이트 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">카테고리 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">배너(광고) 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">공지사항 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">이용약관 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">프로모션 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">widgets</i>
+                            <span>상품 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">상품관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">attach_money</i>
+                            <span>거래 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#">주문 내역 관리</a>
+                            </li>
+                            <li>
+                                <a href="#">결제 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript:void(0);" class="menu-toggle">
+                            <i class="material-icons">trending_down</i>
+                            <span>통계</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>회원현황</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="#">총 회원 / 신규회원</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">성별 / 나이대</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">찜</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" class="menu-toggle">
+                                    <span>판매현황</span>
+                                </a>
+                                <ul class="ml-menu">
+                                    <li>
+                                        <a href="#">총 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">카테고리별 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">지역별 매출</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">가격대별</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+
+                </ul> <!-- 메인 메뉴 ul 끝-->
+
+            </div>
+            <!-- #Menu -->
+
+        </aside>
+        <!-- #END# Left Sidebar -->
+
+
+        <!-------------------------------------------SECTION--------------------------------------------------->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="block-header">
+                    
+                </div>
+                <div class="card">
+                    <div class ="header">
+                        <h1>
+                            회원 상세보기
+                        </h1>
+                    </div>
+                    <div class="row clearfix">
+                        <div>
+                            <div class="body">
+                                <form id="form_validation" method="POST">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <div class ="mem-info">
+                                            <thead> 기본정보 </thead>
+                                            <button type="button" class="btn bg-teal waves-effect pull-right" >수정하기</button>
+                                            </div>
+                                            <tbody>
+                                                <tr>
+                                                    <th> 상점명
+                                                    <td class ="col-md-5"><input type="text" readonly></td>
+                                                    </th>
+                                                    <th>이름
+                                                    <td class ="col-md-4">길동이</td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>비밀번호 변경
+                                                    <td><input type="password" placeholder ="비밀번호">
+                                                        <input type="password" placeholder ="비밀번호 확인"></td>
+                                                    </th>
+                                                    <th>이메일
+                                                        <td><input type="text" id="mem-tel" readonly></td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>총 주문건수
+                                                    <td>
+                                                        <label> 10 건 </label>
+                                            
+                                                        <button type="button"
+                                                            class="btn bg-blue-grey waves-effect"  data-toggle="modal"
+                                                            data-target="#registryModal">상세보기</button></td>
+                                                    </th>
+                                                    <th>연락처
+                                                    <td><input type="text" id="mem-tel" readonly></td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>주소
+                                                    <td colspan="3" class = "addr-box">
+                                                        <div class ="upd-postcode">
+                                                        <button type="button"
+                                                            class="btn bg-blue-grey waves-effect find-postcode">우편번호</button>
+                                                            <input type="text"><br>
+                                                        </div>
+                                                        <div class = "upd-addr">
+                                                        <label for="addr_1"></label><input type="text" id="addr_1">
+                                                        <label for="addr_2"></label> <input type="text" id="addr_2">
+                                                    
+                                                        </div>
+                                                    </td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>등급
+                                                    <td class ="col-md-4">
+                                                        <div class="btn-group">
+                                                            <button id = "grd-selected" type="button"
+                                                                class="btn bg-blue-grey dropdown-toggle"
+                                                                data-toggle="dropdown" aria-haspopup="true"
+                                                                aria-expanded="false">
+                                                                선택 <span class="caret"></span>
+                                                            </button>
+                                                           
+                                                            <ul class="dropdown-menu">
+                                                                <li><a href="javascript:void(0);">일반</a></li>
+                                                                <li><a href="javascript:void(0);">VIP</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    </th>
+                                                    <th>선택약관 동의여부
+                                                    <td colspan="4">
+                                                        <div>
+                                                            <input type="checkbox" name="" id="ch-loc-service"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="ch-loc-service">위치서비스기반</label>
+                                                            <input type="checkbox" name="" id="ch_privacy"
+                                                                class="custom-control-input">
+                                                            <label class="custom-control-label"
+                                                                for="ch_privacy">개인정보보호</label>
+                                                        </div>
+                                                    </td>
+                                                    </th>
+                                                </tr>
+
+                                            </tbody>
+
+                                        </table>
+                                        <table class="table">
+                                            <thead>블랙리스트 설정</thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>설정여부
+                                                    <td>
+                                                        <input type="radio" name="is-black" id="y-blacklist"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="y-blacklist">설정함</label>
+
+                                                        <input type="radio" name="is-black" id="n-blacklist"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="n-blacklist">설정안함</label>
+                                                    </td>
+                                                    </th>
+                                                    <th>차단방법
+                                                    <td>
+                                                        <input type="checkbox" name="" id="block-purchase"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="block-purchase">구매차단</label>
+
+                                                        <input type="checkbox" name="" id="block-login"
+                                                            class="custom-control-input">
+                                                        <label class="custom-control-label"
+                                                            for="block-login">로그인차단</label>
+                                                    </td>
+                                                    </th>
+                                                </tr>
+                                                <tr>
+                                                    <th>참고사항
+                                                    <td class="memo_black" colspan="3"><textarea cols="80" rows="10"
+                                                            required>
+                                            </textarea></td>
+                                                    </th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <div class="btn-layout">
+                                            <button type="button" class="btn bg-teal btn-lg waves-effect">완 료</button>
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- -----------------------------------------------------------------------------------------거래내역 상세보기 -->
+             <div class="modal fade" id="registryModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                                <div class="header">
+                                    <h2>
+                                        거래내역 상세보기
+                                    </h2>
+                                </div>
+                                <div class="body table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>거래 날짜</th>
+                                                <th>카테고리</th>
+                                                <th>상품</th>
+                                                <th>거래 금액</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>2020/07/23</td>
+                                                <td>전자기기</td>
+                                                <td>에어팟</td>
+                                                <td>50000원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="modal-flex--center">
+                                <button type="button" class="btn btn-link waves-effect bg-red"
+                                    data-dismiss="modal">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-------------------------------------------SECTION--------------------------------------------------->
+
+
+
+
+        <!-- Jquery Core Js -->
+        <script src="../plugins/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core Js -->
+        <script src="../plugins/bootstrap/js/bootstrap.js"></script>
+
+        <!-- Select Plugin Js -->
+        <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+        <!-- Slimscroll Plugin Js -->
+        <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+        <!-- Waves Effect Plugin Js -->
+        <script src="../plugins/node-waves/waves.js"></script>
+
+        <!-- Jquery CountTo Plugin Js -->
+        <script src="../plugins/jquery-countto/jquery.countTo.js"></script>
+
+        <!-- Morris Plugin Js -->
+        <script src="../plugins/raphael/raphael.min.js"></script>
+        <script src="../plugins/morrisjs/morris.js"></script>
+
+        <!-- Custom Js -->
+        <script src="../js/admin.js"></script>
+        <script src="../js/pages/index.js"></script>
+
+        <!-- Demo Js -->
+        <script src="../js/demo.js"></script>
+</body>
+
+</html>
