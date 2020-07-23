@@ -51,7 +51,7 @@
         
         <!-- Bootstrap Core Js -->
 		<script src="<c:url value="/resources/vendor/plugins/bootstrap/js/bootstrap.js"/>"></script>
-
+		
         <!-- Select Plugin Js -->
         <script src="<c:url value="/resources/vendor/plugins/bootstrap-select/js/bootstrap-select.js"/>"></script>
 
@@ -99,5 +99,6 @@
         <!-- Demo Js -->
         <script src="<c:url value="/resources/vendor/common/javascript/demo.js"/>"></script>
 </body>
+
 </html>
 

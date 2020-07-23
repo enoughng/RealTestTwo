@@ -169,6 +169,7 @@
 		<!-- Demo Js -->
 		<script src="<c:url value="/resources/vendor/common/javascript/demo.js"/>"></script>
 	</body>
+>>>>>>> 772aa7555764061f6847ad74f23a514be61f7a98
 </html>
 
 
