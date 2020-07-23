@@ -90,7 +90,20 @@
 							<ul class="ml-menu">
 								<li><a href="#">상품관리</a></li>
 							</ul></li>
-	
+						<li>
+                        <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block">
+                            <i class="material-icons">attach_money</i>
+                            <span>거래 관리</span>
+                        </a>
+                        <ul class="ml-menu">
+                            <li>
+                                <a href="#" class=" waves-effect waves-block">주문 내역 관리</a>
+                            </li>
+                            <li>
+                                <a href="#" class=" waves-effect waves-block">결제 관리</a>
+                            </li>
+                        </ul>
+                    </li>
 						<li><a href="javascript:void(0);" class="menu-toggle"> <i
 								class="material-icons">trending_down</i> <span>통계</span>
 						</a>
@@ -169,7 +182,6 @@
 		<!-- Demo Js -->
 		<script src="<c:url value="/resources/vendor/common/javascript/demo.js"/>"></script>
 	</body>
->>>>>>> 772aa7555764061f6847ad74f23a514be61f7a98
 </html>
 
 
