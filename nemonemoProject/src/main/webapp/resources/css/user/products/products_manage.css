@@ -113,10 +113,10 @@ a.product-nav-link:hover {
         border-color: rgb(195, 194, 204);
         border-image: initial;
         border-radius: 2px;
+        cursor: pointer;
     }
 
     .products-manage__cbox-div4 {
-        -webkit-box-align: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -126,6 +126,34 @@ a.product-nav-link:hover {
     padding: 2px 8px;
     overflow: hidden;
     }
+
+    .products-manage__count--list {
+        display: none;
+        position: absolute;
+        top: 55px;
+        flex: 1 1 0%;
+        flex-flow: column wrap;
+        background-color: white;
+        width: 100%;
+        overflow-y: scroll;
+        font-size: 16px;
+        font-family: "Noto Sans KR";
+        justify-content: center;
+        box-shadow: -2px 3px 5px 0.75px #AAAAAA,2px 3px 5px 0.75px #AAAAAA;
+    }
+
+    .products-manage__count--item {
+        padding: 10px 0px;
+        padding-left: 10px;
+    }
+    .products-manage__count--item:hover {
+        color: #FF5058;
+        
+    }
+    .products-manage__count--list :hover {
+        background-color: #EEEEEE;
+    }
+    
 
     .products-manage__cbox--item {
         color: rgb(51, 51, 51);
@@ -379,3 +407,5 @@ a.product-nav-link:hover {
     .products-manage__div button:focus {
         outline: 0
     }
+
+
