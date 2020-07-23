@@ -9,8 +9,8 @@
 <!-- 페이지 CSS -->
 <link rel="stylesheet" href="<c:url value="/resources/css/admin/products/product_list.css"/>">
 
-<!-- 페이지 JS -->
-<script src="<c:url value="/resources/js/admin/members/member_report.js"/>"></script>
+<!-- 페이지 js -->
+<script src="<c:url value="/resources/js/admin/products/product_list.js"/>"></script>
 
 </head>
 <body>

@@ -1,28 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
-<!-- 페이지 CSS -->
-<link rel="stylesheet" href="<c:url value="/resources/css/admin/main/ad_main.css"/>">
-
+<title>네모내모 관리자 메인페이지</title>
 </head>
 <body>
-	<% 
-		/* 공통 Header */
-		
-	%>
-	<header>
-		<jsp:include page="/WEB-INF/views/admin/include/header.jsp" />
-		<jsp:include page="/WEB-INF/views/admin/include/side-nav.jsp"/>		
-	</header>
-	<% 
-		/* 각 페이지의 특성! */
-	%>
-	<!-- 메인 -->
+   <% 
+      /* 공통 Header */
+      
+   %>
+   <header>
+      <jsp:include page="/WEB-INF/views/admin/include/header.jsp" />
+      <jsp:include page="/WEB-INF/views/admin/include/side-nav.jsp"/>      
+   </header>
+   <% 
+      /* 각 페이지의 특성! */
+   %>
+   <!-- 메인 -->
 
         <section class="content">
             <div class="container-fluid">
@@ -210,6 +208,6 @@
                 </div>
             </div>
          </section> 
-	</body>
-	
+   </body>
+   
 </html>

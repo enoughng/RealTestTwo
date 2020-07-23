@@ -10,6 +10,9 @@
 <!-- 페이지 CSS -->
 <link rel="stylesheet" href="<c:url value="/resources/css/admin/members/member_care_reply.css"/>">
 
+<!-- 페이지 JS -->
+<script src="<c:url value="/resources/js/admin/members/member_care_reply.js"/>"></script>
+
 </head>
 <body>
 	<% 
