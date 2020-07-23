@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>일대일 문의</title>
+<title>고객 문의함</title>
 
 <!-- 페이지 CSS -->
 <link rel="stylesheet" href="<c:url value="/resources/css/admin/members/member_care_reply.css"/>">

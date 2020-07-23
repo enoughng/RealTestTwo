@@ -5,7 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>회원 정보</title>
+
+<!-- 페이지 CSS -->
+<link rel="stylesheet" href="<c:url value="/resources/css/admin/members/member_info_detail.css"/>">
+
+<!-- 페이지 JS -->
+<script src="<c:url value="/resources/js/admin/members/member_info_detail.js"/>"></script>
 
 </head>
 <body>

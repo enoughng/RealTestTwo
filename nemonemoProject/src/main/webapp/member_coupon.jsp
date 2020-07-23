@@ -5,8 +5,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>회원 쿠폰 관리</title>
 
+<!-- 페이지 CSS -->
+<link rel="stylesheet" href="<c:url value="/resources/css/admin/members/member_coupon.css"/>">
+
+<!-- 페이지 JS -->
+<script src="<c:url value="/resources/js/admin/members/member_coupon.js"/>"></script>
 </head>
 <body>
 	<% 
