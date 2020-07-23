@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Products 상품등록 페이지 */
     button {
         border: 0;
@@ -12,29 +14,6 @@
     .products-content--div {
         flex: 1 1 0%;
     }
-
-    .products-content--div textarea{
-        resize: none;
-        line-height: 1.35;
-        padding: 1rem;
-    }
-
-    .products-content--div input, .products-content--div textarea {
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgb(195, 194, 204);
-        border-image: initial;
-    }
-
-    .products-content--div input:not([type="file"]):not([type="radio"]) {
-        height: 3rem;
-        padding: 0px 1rem;
-    }
-
-    .products-main-item:last-child {
-        border-bottom: 0px;
-    }
-    
 
     .products-title--div > span {
         color: #FF5058;
@@ -128,7 +107,9 @@
             border-bottom: 1px solid rgb(220, 219, 228);
         }
             /* 목록 끝 */
-        
+        .flex-container section {
+            margin-bottom: 3rem;
+        }
     
         /* 리스트 1 : 상품 이미지 */
         
@@ -483,98 +464,166 @@
         .products-delivery-price--div2 {
             margin-right: 2rem;
         }
-        
-        .products-delivery-price--div2 input {
-            border-width: 1px;
-            border-style: solid;
-            border-color: rgb(195, 194, 204);
-            border-image: initial;
-        }
 
-        .products-delivery--label {
+        .products-delivery-price--label {
             display: flex;
-            -webkit-box-align: center;
             align-items: center;
             cursor: pointer;
         }
         
-        .products-delivery-chkbox:not([type="file"]):not([type="radio"]) {
-            height: 3rem;
-            padding: 0px 1rem;
-        }
+        
 
-        .products-delivery--chkbox::before {
+        .products-delivery-price--label::before {
             content: "";
-            width: 2rem;
-            height: 2rem;
+            size: 2rem;
+            background-position: center center;
+            background-repeat: no-repeat;
             padding: 0.5rem;
             border-radius: 50%;
         }
 
-        
-
-
-        /* 리스트 7 : 가격 끝*/
+            /* 리스트 7 : 가격 끝*/
 
         /* 리스트 8 : 설명 시작*/
-        .products-explain-text {
-            width: 100%;
-        }
-
-        .products-explain-text__size {
-            text-align: right;
-            margin-top: 0.5rem;
-        }
         
-        /* 리스트 8 : 설명 끝*/
-
-        /* 리스트 9 : 연관 태그 시작*/
-        .products-tag__div {
-            display: flex;
-            -webkit-box-align: center;
-            align-items: center;
-            height: 3rem;
-            position: relative;
+        .products-content--div textarea {
+            resize: none;
+            line-height: 1.35;
+            padding: 1rem;
             border-width: 1px;
             border-style: solid;
             border-color: rgb(195, 194, 204);
             border-image: initial;
+            width: 100%
         }
-        .products-tag__div2 {
-            height: 100%;
-            flex: 1 1 0%;
+        .products-content--size {
+            text-align: right;
+            margin-top: 0.5rem;
         }
-        .products-tag__div3 {
-            position: relative;
+
+        /* 리스트 8 : 설명 끝*/
+
+        /* 리스트 9 : 연관 태그 시작*/
+
+
+        .products-tag--div {
             display: flex;
-            -webkit-box-align: center;
-            align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 3rem;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(195, 194, 204);
+    border-image: initial;
+        }
+
+        .products-tag--div2 {
             height: 100%;
+    flex: 1 1 0%;
         }
-        .products-tag__div3 input {
-            padding: 0 15px;
+
+        .products-tag--div3 {
+            position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+        }
+
+        .products-tag--div3 input {
             width: 100%;
-            height: 100% !important;
-            border-width: 0px !important;
-            border-style: initial !important;
-            border-color: initial !important;
-            border-image: initial !important;   
+    height: 100% !important;
+    border-width: 0px !important;
+    border-style: initial !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    padding: 0px 1rem;
         }
+
         /* 리스트 9 : 연관 태그 끝*/
         
+
         /* 리스트 10 : 수량 시작*/
 
-        .products-quantity__input{
-            width: 240px;
-            margin-right: 1rem;
+        .products-count--div {
+            
         }
-        
+
+        .products-count--input {
+            height: 3rem;
+    padding: 0px 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(195, 194, 204);
+    border-image: initial;
+    width: 240px;
+    margin-right: 1rem;
+        }
+
+        .products-main-item input[type="text"]:focus {
+            outline: solid;
+            outline-width: 1px;
+        }
+
         /* 리스트 10 : 수량 끝*/
 
-        
+
+        .products-main-item:last-child {
+            border-bottom: 0px;
+        }
+
+       
 
 
         /* Products Footer */
+
+        .products-footer--div {
+            padding-bottom: 10.5rem;
+            width: 100%;
+    height: 5.5rem;
+    box-shadow: rgb(234, 233, 241) 0px -1px 0px 0px;
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(250, 250, 253);
+        }
+
+        .products-footer--h3 {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .products-footer--h3::before{
+            content: "";
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-size: cover;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTggMEMzLjU4OSAwIDAgMy41ODkgMCA4czMuNTg5IDggOCA4IDgtMy41ODkgOC04LTMuNTg5LTgtOC04bTAgMTQuNEE2LjQwNyA2LjQwNyAwIDAgMSAxLjYgOGMwLTMuNTI5IDIuODcxLTYuNCA2LjQtNi40IDMuNTI5IDAgNi40IDIuODcxIDYuNCA2LjQgMCAzLjUyOS0yLjg3MSA2LjQtNi40IDYuNG0wLTUuNmEuOC44IDAgMCAwIC44LS44VjQuOGEuOC44IDAgMSAwLTEuNiAwVjhhLjguOCAwIDAgMCAuOC44bTAgMS41MmEuODguODggMCAxIDAgMCAxLjc2Ljg4Ljg4IDAgMCAwIDAtMS43NiIvPgo8L3N2Zz4K);
+    background-position: center center;
+    background-repeat: no-repeat;
+        }
+
+        .products-footer--h3 a {
+            color: rgb(155, 153, 169);
+            font-size: 13px;
+            margin-left: 0.5rem;
+            text-decoration: underline;
+        }
+
+        .products-footer--p {
+            margin-top: 1rem;
+   		 	font-size: 14px;
+    		text-align: left;
+    		white-space: normal;
+        }
+
+        b {
+            font-weight: bolder;
+        }
         #products-footer {
             /* 공식 100vw, calc(-50vw + 50%)*/
             width: 100vw;
@@ -621,33 +670,5 @@
             border-radius: 2px;
         }
     
-
-        .products-footer__div {
-            padding-bottom: 10.5rem;
-        }
-
-        .products-footer__div h3 {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            font-size: 16px;
-        }
-        .products-footer__div h3::before {
-            content: "";
-            width: 1rem;
-            height: 1rem;
-            margin-right: 0.5rem;
-            background-size: cover;
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTggMEMzLjU4OSAwIDAgMy41ODkgMCA4czMuNTg5IDggOCA4IDgtMy41ODkgOC04LTMuNTg5LTgtOC04bTAgMTQuNEE2LjQwNyA2LjQwNyAwIDAgMSAxLjYgOGMwLTMuNTI5IDIuODcxLTYuNCA2LjQtNi40IDMuNTI5IDAgNi40IDIuODcxIDYuNCA2LjQgMCAzLjUyOS0yLjg3MSA2LjQtNi40IDYuNG0wLTUuNmEuOC44IDAgMCAwIC44LS44VjQuOGEuOC44IDAgMSAwLTEuNiAwVjhhLjguOCAwIDAgMCAuOC44bTAgMS41MmEuODguODggMCAxIDAgMCAxLjc2Ljg4Ljg4IDAgMCAwIDAtMS43NiIvPgo8L3N2Zz4K);
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
-
-        .products-footer__div h3 a {
-            color: rgb(155, 153, 169);
-            font-size: 13px;
-            margin-left: 0.5rem;
-            text-decoration: underline;
-        }
-
     /* Products 상품등록 페이지 끝 */
+
