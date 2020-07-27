@@ -127,49 +127,50 @@ Licensed under the MIT license.
 	// Resizes the canvas to the given dimensions.
 	//
 	// @param {number} width New width of the canvas, in pixels.
+	// @param {number} width New height of the canvas, in pixels.
 
-//	Canvas.prototype.resize = function(width, height) {
-//
-//		if (width <= 0 || height <= 0) {
-//			throw new Error("Invalid dimensions for plot, width = " + width + ", height = " + height);
-//		}
-//
-//		var element = this.element,
-//			context = this.context,
-//			pixelRatio = this.pixelRatio;
-//
-//		// Resize the canvas, increasing its density based on the display's
-//		// pixel ratio; basically giving it more pixels without increasing the
-//		// size of its element, to take advantage of the fact that retina
-//		// displays have that many more pixels in the same advertised space.
-//
-//		// Resizing should reset the state (excanvas seems to be buggy though)
-//
-//		if (this.width != width) {
-//			element.width = width * pixelRatio;
-//			element.style.width = width + "px";
-//			this.width = width;
-//		}
-//
-//		if (this.height != height) {
-//			element.height = height * pixelRatio;
-//			element.style.height = height + "px";
-//			this.height = height;
-//		}
-//
-//		// Save the context, so we can reset in case we get replotted.  The
-//		// restore ensure that we're really back at the initial state, and
-//		// should be safe even if we haven't saved the initial state yet.
-//
-//		context.restore();
-//		context.save();
-//
-//		// Scale the coordinate space to match the display density; so even though we
-//		// may have twice as many pixels, we still want lines and other drawing to
-//		// appear at the same size; the extra pixels will just make them crisper.
-//
-//		context.scale(pixelRatio, pixelRatio);
-//	};
+	Canvas.prototype.resize = function(width, height) {
+
+		if (width <= 0 || height <= 0) {
+			throw new Error("Invalid dimensions for plot, width = " + width + ", height = " + height);
+		}
+
+		var element = this.element,
+			context = this.context,
+			pixelRatio = this.pixelRatio;
+
+		// Resize the canvas, increasing its density based on the display's
+		// pixel ratio; basically giving it more pixels without increasing the
+		// size of its element, to take advantage of the fact that retina
+		// displays have that many more pixels in the same advertised space.
+
+		// Resizing should reset the state (excanvas seems to be buggy though)
+
+		if (this.width != width) {
+			element.width = width * pixelRatio;
+			element.style.width = width + "px";
+			this.width = width;
+		}
+
+		if (this.height != height) {
+			element.height = height * pixelRatio;
+			element.style.height = height + "px";
+			this.height = height;
+		}
+
+		// Save the context, so we can reset in case we get replotted.  The
+		// restore ensure that we're really back at the initial state, and
+		// should be safe even if we haven't saved the initial state yet.
+
+		context.restore();
+		context.save();
+
+		// Scale the coordinate space to match the display density; so even though we
+		// may have twice as many pixels, we still want lines and other drawing to
+		// appear at the same size; the extra pixels will just make them crisper.
+
+		context.scale(pixelRatio, pixelRatio);
+	};
 
 	// Clears the entire canvas area, not including any overlaid HTML text
 
