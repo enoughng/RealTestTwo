@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/java,java-web,eclipse,windows,macos,maven,linux
-# Edit at https://www.toptal.com/developers/gitignore?templates=java,java-web,eclipse,windows,macos,maven,linux
+# Created by https://www.toptal.com/developers/gitignore/api/java,java-web,windows,macos,eclipse,maven
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,java-web,windows,macos,eclipse,maven
 
 ### Eclipse ###
 .metadata
@@ -97,21 +97,6 @@ hs_err_pid*
 ## ignoring target file
 target/
 
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
 ### macOS ###
 # General
 .DS_Store
@@ -177,6 +162,10 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-# End of https://www.toptal.com/developers/gitignore/api/java,java-web,eclipse,windows,macos,maven,linux
-.project
+
+
 .classpath
+.project
+.settings/
+
+# End of https://www.toptal.com/developers/gitignore/api/java,java-web,windows,macos,eclipse,maven
