@@ -4,7 +4,7 @@
 <div class="main_header container-md">
 	<div class="flex">
 		<!-- 로고 영역 -->
-		<a href="#" id="main-logo-area"><img
+		<a href="<c:url value="/index.do"/>" id="main-logo-area"><img
 			src="<c:url value="/resources/images/user/common/mainLogo.png"/>" alt="mainLogo"
 			id="main-logo"></a>
 		<!-- 검색창 영역 -->
@@ -43,7 +43,7 @@
 		</div>
 		<!-- 우측메뉴 -->
 		<div class="my-menu">
-			<a class="my-menu-box" href="#"> <img
+			<a class="my-menu-box" href="<c:url value="/products/new.do"/>"> <img
 				src="<c:url value="/resources/images/user/common/sell2.png"/>" alt="판매하기아이콘"
 				id="sell-icon">&nbsp;&nbsp;판매하기
 			</a> <a href="#"> <img src="<c:url value="/resources/images/user/common/my_store.png"/>"

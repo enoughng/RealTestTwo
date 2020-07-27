@@ -40,12 +40,6 @@ a:hover {
 	padding-bottom: 0px;
 }
 
-.top-menus {
-	width: 1024px;
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-}
 
 .nav-box {
 	display: flex;
