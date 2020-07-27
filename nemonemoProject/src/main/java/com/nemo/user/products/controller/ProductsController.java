@@ -2,20 +2,20 @@ package com.nemo.user.products.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-
-
 
 @Controller
 @RequestMapping("/products")
-public class ProductsController {
+public class ProductsController{
 	
+	public ProductsController() {
+		System.out.println("ProductsController 생성!");
+	}
 	
-	@RequestMapping(value = "/new.do", method= {RequestMethod.GET})
+	@RequestMapping("/new")
 	public ModelAndView getBoardList() {
-		
-		ModelAndView mav = new ModelAndView("products/new.jsp");
+		System.out.println("컨트롤러 ");
+		ModelAndView mav = new ModelAndView("products/products_new");
 		return mav;
 	}
 	
